@@ -22,9 +22,9 @@
 <body>
     <header>
         <section class="section-top-bar">
-            <div class="top-bar container">
+            <div class="top-bar container .container-header-menu">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 box-search">
                         <div class="search-group">    
                             <input type="text" class="search-box" placeholder="Tìm kiếm">
                         </div>
@@ -45,11 +45,11 @@
             </div>
         </section>
     
-        <section class="section-header-menu">
-            <div class="container-fluid">
+        <section id="header-home" class="section-header-menu">
+            <div class="container">
                 <div class="row">
                     <div class="col-2 header-logo">
-                        <a><img src="/frontend/imgimg/Logo Tây Hồ trắng-01-01 1.png" alt=""></a>
+                        <a href=""><div class="box-logo"><img src="/frontend/img/logo.png" alt=""></div></a>
                     </div>
                     <div class="col-10 header-menu">
                         <ul>
@@ -84,10 +84,24 @@
         </section>
     </header>
 
-    <section class="page-banner">
-        <div class="iframe-banner">
+    <section id="banner-home-360" class="page-banner">
+        <div class="box-iframe">
             <iframe src="https://store360.vingg.vn/ha-noi/dong-da/godongdavadenvuaquangtrung/index.html" frameborder="0"></iframe>
         </div>
     </section>
+
+    <section id="particle-js">
+        <!-- particles.js container --> 
+        <div id="particles-js"></div> 
+        <!-- stats - count particles --> 
+        <div class="count-particles"> 
+            <span class="js-count-particles">--</span> particles 
+        </div> 
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 
+        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    </section>
+
+    <script src="/frontend/js/particle.js"></script>
 </body>
 </html>
