@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Korinna';
+}
+
+a{
+	text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.mgt-100{
+	margin-top: 100px;
+}
+
+.mgb-32{
+	margin-bottom: 32px;
+}
+
+.title-section{
+	font-size: 36px;
+	text-transform: uppercase;
+	color:#3F4042;
+	font-weight: 400;
+}
+
+.container{
+	max-width: 1520px;
+}
+
+/* menu */
+.section-top-bar{
+	background-color: #116B66;
+	padding: 10px 0
+}
+
+.top-bar{
+	background-color: #116B66;
+}
+
+.top-bar .col-12{
+	display: flex;
+	justify-content: end;
+}
+
+.search-group{
+	margin-right: 40px;
+	padding-left: 6px;
+	margin-top: auto;
+	margin-bottom: auto;
+
+
+}
+
+.search-box{
+	width: 290px;
+	border: none;
+	border-radius: 12px;
+	height: 28px;
+}
+
+.sign-user-group .button-sign-user{
+	background-color: #3F4042;
+	color: #fff;
+	padding: 5px 24px;
+}
+
+.language-change{
+	display: flex;
+}
+
+.button-sign-user{
+	margin-right: 24px;
+}
+
+.header-menu{
+	display: flex;
+	/* padding: 15px 0; */
+}
+
+.header-menu ul{
+	display: flex;
+	flex-direction: row;
+}
+
+.section-header-menu{
+	padding: 8px 0 ; 
+	background-color: #fff;
+}
+
+.header-menu .sub-menu a{
+	color: #074946;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.header-menu .sub-menu{
+	font-weight: bold;
+	display: flex;
+    margin: 0 25px;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+.header-logo{
+	text-align: end;
+	
+}
+
+.page-banner iframe{
+	width: 100%;
+	height: 100%;
+}
+
+.iframe-banner{
+	height: calc(100vh - 126px);
+}
+
+/* section background index */
+.background-index{
+	position: absolute;
+	height: 932px;
+	z-index: -1;
+}
+
+.background-index img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Địa điểm */
+.place-img-slide img{
+	width: 100%;
+	height: 413px;
+	object-fit: cover;	
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
+.place-img-slide .img-slide-item{
+	margin: 0 15px;
+}
+
+.place-detail .place-content .place-title{
+	text-transform: uppercase;
+	font-size: 36px;
+	color: #3F4042;
+	margin-bottom:12px;
+}
+
+.place-detail .place-content .place-address{
+	font-size: 28px;
+	color: #3F4042;
+	margin-bottom: 31px;
+}
+
+.place-content{
+	margin: auto
+}
+
+.button-content{
+	display: flex;
+}
+
+.button-content button{
+	width: 162px;
+	height: 45px;
+	background-color: transparent;
+	border: 2px solid #188181;
+	margin-right: 17px;
+	color: #3F4042;
+	font-size: 22px;
+	border-radius:10px ;
+}
+
+.button-content i{
+	color: #126B66;
+	margin-right: 12px;
+}
+
+.title-information{
+	color: #3F4042;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.icon-information{
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon-information p{
+	color: #3F4042;
+	font-size: 28px;
+	
+}
+
+.icon-information i{
+	color:#126B66;
+}
+
+.content-information{
+	font-size: 22px;
+	line-height: 38px;
+}
+
+.map-iframe iframe{
+	width: 100%;
+	height: 830px;
+}
+
+
+
+
