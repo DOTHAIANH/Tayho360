@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: 'Korinna';
+    src: url('/frontend/font/Korina/KorinnaBold-Italic.woff2') format('woff2'),
+        url('/frontend/font/Korina/KorinnaBold-Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Korinna';
+    src: url('/frontend/font/Korina/KorinnaNormal.woff2') format('woff2'),
+        url('/frontend/font/Korina/KorinnaNormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Korinna';
+    src: url('/frontend/font/Korina/KorinnaBold.woff2') format('woff2'),
+        url('/frontend/font/Korina/KorinnaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Korinna';
+    src: url('/frontend/font/Korina/Korinna-Italic.woff2') format('woff2'),
+        url('/frontend/font/Korina/Korinna-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Korinna';
+    src: url('/frontend/font/Korina/KorinnaNormal-Italic.woff2') format('woff2'),
+        url('/frontend/font/Korina/KorinnaNormal-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
