@@ -144,4 +144,15 @@ table {
 	margin-bottom: 40px;
 }
 
+/* event-home */
+
+.event-home-title p {
+	color: #ffffff;
+	font-size: 28px;
+	line-height: normal;
+	text-align: center;
+	margin: 8px 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ffffff;
+}
 
