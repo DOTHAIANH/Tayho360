@@ -62,6 +62,10 @@ table {
 /* home.html */
 
 /* #particle-js */
+#particle-js {
+	height: 824px;
+}
+
 #particles-js {
 	height: 824px !important;
 }
@@ -85,8 +89,8 @@ table {
 	text-transform: uppercase;
 }
 
-.article-space {
-	border-bottom: 2px solid #ffffff;
+#particle-js .article-space {
+	border-bottom: 3px solid #ffffff;
 	width: 15%;
 	margin: auto;
 }
@@ -144,4 +148,79 @@ table {
 	margin-bottom: 40px;
 }
 
+/* event-home */
+
+#event-home .article-space {
+	border-bottom: 3px solid #3f4042;
+	width: 7.5%;
+	margin: 2px auto 55px auto;
+}
+
+.event-home-title p {
+	color: #3f4042;
+	font-size: 36px;
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 100px;
+}
+
+.slide-event-home p {
+	color: #ffffff;
+}
+
+.info-event-home {
+	background-color: #6FABA1;
+}
+
+.info-event-home .name-event-home p {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: normal;
+}
+
+.info-event-home .description-event-home .title-des {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 36px;
+}
+
+.info-event-home .description-event-home .text-des {
+	font-size: 20px;
+	line-height: normal;
+	font-weight: 400;
+	margin-top: 19px;
+}
+
+.info-event-home .local-event-home {
+	margin-top: 42px;
+}
+
+.info-event-home {
+	padding: 143px 313px 181px 160px;
+	width: 57%;
+}
+
+.item-event-home {
+	left: 20px;
+}
+
+.info-event-home {
+	top: 153px;
+	left: 841px;
+}
+
+.box-event-home .item-event-home {
+	width: 48.5%;
+}
+
+.box-event-home .item-event-home .box-img-item-eh {
+	width: 100%;
+}
+
+.box-event-home .item-event-home .box-img-item-eh img {
+	width: 100%;
+	height: auto;
+}
 
