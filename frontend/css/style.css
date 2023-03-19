@@ -60,6 +60,10 @@ table {
 	margin-bottom: 32px;
 }
 
+.mgb-50{
+	margin-bottom: 50px;
+}
+
 .title-section{
 	font-size: 36px;
 	text-transform: uppercase;
@@ -99,6 +103,10 @@ table {
 
 .place-img-slide .img-slide-item{
 	margin: 0 15px;
+}
+
+#place-detail{
+	margin-top: 45px;
 }
 
 #place-detail .place-content .place-title{
@@ -211,5 +219,218 @@ table {
 	padding: 10px;
 	border-radius: 10px;
 }
+
+/* Đánh giá */
+#place-comment .point-progress {
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #D9D9D9;
+}
+
+#place-comment .point-progress-bar{
+	border-radius: 10px;
+	background-color: #188181;
+}
+
+
+#place-comment .point-right-star i.checked{
+	color: #188181;
+}
+
+#place-comment .point-right-star i{
+	font-size: 72px;
+	color: #D9D9D9;
+}
+
+#place-comment .box-point-right{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#place-comment .box-point-right .point-right-number p{
+	font-size: 150px;
+}
+
+#place-comment .box-point-right .point-right-star{
+	margin-bottom: 29px;
+}
+
+#place-comment .box-point-right .point-right-post p{
+	font-size: 32px;
+}
+
+#place-comment .box-write-comment{
+	/* display: flex; */
+	/* justify-content: center; */
+	display: flex;
+	
+	
+
+}
+
+#place-comment .box-write-comment .write-comment{
+	display: flex;
+	justify-content: center;
+	
+	
+}
+
+#place-comment .box-write-comment .write-comment .button-write-comment{
+	border: 1px solid #188181;
+	height: 107px;
+	width: 704px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius:30px;
+	background-color: transparent;
+}
+
+#place-comment .box-write-comment .write-comment .button-write-comment .button-icon-comment{
+	margin-right: 16px;
+}
+
+#place-comment .box-write-comment .write-comment .button-write-comment .button-icon-comment:hover{
+
+}
+
+#place-comment .box-write-comment .write-comment .button-write-comment .button-text-comment{
+	font-size: 32px;
+}
+
+/* Bài viết đánh giá */
+
+#place-post-comment .title-post-comment{
+	font-size: 36px;
+	margin-bottom:45px ;
+	margin-top: 100px;
+}
+
+#place-post-comment .information-people{
+	display: flex;
+}
+
+#place-post-comment .information-people-star .point-right-star i.checked{
+	color: #188181;
+
+}
+
+
+#place-post-comment .information-people-box{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin-left: 13px;;
+}
+#place-post-comment .information-people-star .point-right-star i{
+	color: #D9D9D9;
+	font-size: 35px;
+}
+
+#place-post-comment .information-people-star{
+	display: flex;
+    align-items: end;
+}
+
+#place-post-comment .post-comment-content{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 36px;
+}
+
+#place-post-comment .post-comment-content .information-people-name{
+	font-size: 45px;
+}
+
+#place-post-comment .post-comment-content .information-people-hour{
+	font-size: 32px;
+}
+
+
+#place-post-comment .post-comment-content-text{
+	font-size: 36px;
+}
+
+#place-post-comment .information-people-img img{
+	width: 86px;
+	height: 86px;
+	border-radius:50% ;
+
+}
+
+#place-post-comment .post-comment{
+	margin-bottom: 62px;
+}
+
+
+/* pagination */
+
+#pagination-page .pagination{
+	justify-content: center;
+}
+
+#pagination-page .pagination li a{
+	border: none;
+	color: #000;
+}
+
+#pagination-page .pagination li a.active{
+	border: 1px solid #188181;
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+
+/* category detail */
+.mgt-340{
+	margin-top: 340px;
+}
+#place-category .category-title{
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+
+
+#place-category .category-title h1{
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #3F4042;
+	margin-bottom: 16px;
+}
+
+#place-category .category-title p{
+	font-size: 28px;
+	color: #3F4042;
+}
+
+#place-category .place-category-item-img{
+	position: relative;
+	height: 455px;
+}
+
+#place-category .place-category-item .place-category-item-img img{
+	width: 100%;
+	border-radius: 10px;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+#place-category .place-category-item .place-category-item-title p{
+	color: #fff;
+	font-size: 36px;
+} 
+
+#place-category .place-category-item .place-category-item-title{
+	position: absolute;
+	bottom: 9px;
+	right: 20px;
+}
+
 
 
