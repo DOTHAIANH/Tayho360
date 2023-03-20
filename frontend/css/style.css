@@ -476,8 +476,13 @@ table {
 
 #section-background-index .filter-option{
 	width: 80%;
+	margin:auto;
+	padding-left:62px;
+	padding-right: 42px;
+	
 	
 }
+
 
 #section-background-index .filter-option-box{
 	display: flex;
@@ -495,10 +500,12 @@ table {
 	transform: translateY(-100px);
 	padding: 0 ;
 	position: absolute;
+	right: 8%;
+	
 }
 
 #section-background-index .container-box-filter-search .form-select-filter{
-	/* height: 80%; */
+	height: 80px;
 }
 
 #section-background-index .filter-option-title {
@@ -507,6 +514,7 @@ table {
 	display: flex;
     align-items: center;
     justify-content: center;
+	padding: 72px 60px;
 
 }
 
@@ -514,11 +522,21 @@ table {
 #section-background-index .filter-search{
 	border-top: 2px solid rgba(0, 0, 0, 0.2);
 	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	
 }
 
 #container-box-filter-search{
 	padding: 0;
 }
+
+.filter-search #search-place {
+	height: 60px;
+}
+
+
 
 
 
