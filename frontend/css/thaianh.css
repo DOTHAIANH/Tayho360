@@ -407,3 +407,93 @@ table {
 .box-service:hover .over_black, .box-service:hover .title-service-details {
     opacity: 0;
 }
+
+/* #news-home */
+
+#news-home .article-space {
+	border-bottom: 3px solid #3f4042;
+	width: 15.5%;
+	margin: 2px auto 55px auto;
+}
+
+#news-home .container {
+    padding: 0 196px;
+}   
+
+#news-home .all-news-home .box-image-news img {
+    width: 100%;
+    height: auto;
+}
+
+#news-home .all-news-home .box-news ul {
+    font-size: 22px;
+    color: #3f4042;
+    font-weight: 400;
+    padding-left: 36px;
+    text-transform: uppercase;
+}
+
+#news-home .all-news-home .box-news ul li {
+    border-bottom: 4px solid rgba(18, 107, 102, 0.7);
+    padding-bottom: 24px;
+    padding-top: 32px;
+    list-style-type: disc;
+}
+
+#news-home .all-news-home .box-news ul li:last-child {
+    border: none;
+}
+
+/* #tour-travel-home */
+
+#tour-travel-home .article-space {
+	border-bottom: 3px solid #3f4042;
+	width: 15.5%;
+	margin: 2px auto 55px auto;
+}
+
+#tour-travel-home .container {
+    padding: 0 196px;
+}   
+
+#tour-travel-home .box-slide-tth .box-tth {
+    border-radius: 20px;
+    background-color: #4E9D90;
+
+}
+
+#tour-travel-home .box-slide-tth .box-tth .box-image img {
+    width: 100%;
+    height: auto;
+}
+
+#tour-travel-home .box-slide-tth .box-tth .box-info {
+    padding: 12px 20px 23px 20px;
+    color: #ffffff;
+}
+
+#tour-travel-home .box-slide-tth .box-tth .box-info .type-tour {
+    font-size: 19px;
+    line-height: normal;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+#tour-travel-home .box-slide-tth .box-tth .box-info .title-tour {
+    font-size: 28px;
+    line-height: normal;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+#tour-travel-home .box-slide-tth .box-tth .box-info .price-tour {
+    font-size: 22px;
+}
+
+/* #map-home */
+
+#map-home .article-space {
+	border-bottom: 3px solid #3f4042;
+	width: 15.5%;
+	margin: 2px auto 55px auto;
+}
