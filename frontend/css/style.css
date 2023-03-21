@@ -621,6 +621,11 @@ table {
 	color: #3F4042;
 }
 
+
+#section-news-content{
+	margin-bottom: 125px;
+}
+
 #section-news-content .news-main h1{
 	font-size: 36px;
 	font-weight: 400;
@@ -629,9 +634,22 @@ table {
 	line-height: 1.2;
 }
 
+#section-news-content .news-sidebar{
+	margin-top: 228px;
+}
+
 #section-news-content .news-sidebar-item{
 	margin-left: 94px;
 	margin-bottom: 46px;
+}
+
+#section-news-content .news-sidebar-box-title{
+	margin-left: 94px;
+	margin-bottom: 36px;
+}
+
+#section-news-content .news-sidebar-box-title h2{
+	font-size: 36px;
 }
 
 #section-news-content .news-main .title-news{
@@ -656,15 +674,33 @@ table {
 	margin-bottom:33px;
 }
 
+
+#section-news-content .news-sidebar .title-news-sidebar {
+	margin-bottom: 10px;;
+}
+
 #section-news-content .news-sidebar .title-news-sidebar a{
 	font-weight: 400;
 	font-size: 30px;
 	color:#3F4042;
 }
 
+#section-news-content .news-sidebar .hour-news-sidebar span{
+	font-size: 18px;
+}
+
 /* tin tuc khac */
+#section-news-other .news-other-box-title h2{
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+#section-news-other .news-other-box-title{
+	margin-bottom: 34px;
+}
+
 #section-news-other .news-other .title-news-other{
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 
 
