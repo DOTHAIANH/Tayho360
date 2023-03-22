@@ -52,8 +52,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.mgt-100{
-	margin-top: 100px;
+.mgt-80{
+	margin-top: 80px;
 }
 
 .mgb-32{
@@ -64,6 +64,103 @@ table {
 	margin-bottom: 50px;
 }
 
+/* arrow */
+
+#place-detail .place-img-slide{
+	padding-left: 110px;
+}
+
+#place-detail .place-img-slide .slick-arrow {
+    position: absolute;
+    z-index: 10;
+    font-size: 30px;
+    background: none;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+}
+
+#place-detail .place-img-slide .slick-prev {
+    display: none !important;
+}
+
+#place-detail .place-img-slide .slick-next {
+    right: -13px;
+    transition: .8s;
+    top: 143px;
+    background-color: rgba(85, 143, 124, 0.9);
+}
+
+#place-detail .place-img-slide .slick-prev::before {
+    display: none !important;
+}
+
+#place-detail .place-img-slide .slick-next::before {
+    display: none;
+}
+
+#place-detail .place-img-slide .slick-prev:hover {
+    transition: .8s;
+    background-color: #558F7C;
+}
+
+#place-detail .place-img-slide .slick-next:hover {
+    transition: .8s;
+    background-color: #558F7C;
+}
+
+#place-around-section .place-around-slide .slick-arrow {
+    position: absolute;
+    /* bottom: -800px; */
+    z-index: 10;
+    font-size: 30px;
+    background: none;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+}
+
+#place-around-section .place-around-slide .slick-prev {
+    right: 940px;
+    top: 143px;
+    transition: .8s;
+    background-color: rgba(85, 143, 124, 0.9);
+}
+
+#place-around-section .place-around-slide .slick-next {
+    right: -38px;
+    transition: .8s;
+    top: 143px;
+    background-color: rgba(85, 143, 124, 0.9);
+}
+
+#place-around-section .place-around-slide .slick-prev::before {
+    display: none !important;
+}
+
+#place-around-section .place-around-slide .slick-next::before {
+    display: none;
+}
+
+#place-around-section .place-around-slide .slick-prev:hover {
+    transition: .8s;
+    background-color: #558F7C;
+}
+
+#place-around-section .place-around-slide .slick-next:hover {
+    transition: .8s;
+    background-color: #558F7C;
+}
+
+
+
+
+/*  */
+
 .banner-img{
 	height: 728px;
 }
@@ -72,23 +169,26 @@ table {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	
-	
 }
 
 .title-section{
-	font-size: 36px;
+	font-size: 30px;
 	text-transform: uppercase;
 	color:#3F4042;
 	font-weight: 400;
 }
 
 .container{
-	max-width: 1600px;
+	max-width: 1300px;
 }
 
 .iframe-banner{
-	height: calc(100vh - 126px);
+	height: calc(100vh - 190px);
+}
+
+.iframe-banner iframe{
+	width: 100%;
+	height: 100%;
 }
 
 /* section background index */
@@ -105,16 +205,16 @@ table {
 
 
 /* Địa điểm */
-.place-img-slide img{
+.place-img-slide .img-slide-item img{
 	width: 100%;
-	height: 413px;
+	height: 330px;
 	object-fit: cover;	
 	border: 1px solid #fff;
 	border-radius: 10px;
 }
 
 .place-img-slide .img-slide-item{
-	margin: 0 15px;
+	padding: 0 12px;
 }
 
 #place-detail{
@@ -123,7 +223,7 @@ table {
 
 #place-detail .place-content .place-title{
 	text-transform: uppercase;
-	font-size: 36px;
+	font-size: 30px;
 	color: #3F4042;
 	margin-bottom:12px;
 }
@@ -156,11 +256,12 @@ table {
 .button-content i{
 	color: #126B66;
 	margin-right: 12px;
+	font-size: 18px;
 }
 
 .title-information{
 	color: #3F4042;
-	font-size: 36px;
+	font-size: 30px;
 	text-transform: uppercase;
 }
 
@@ -180,7 +281,7 @@ table {
 }
 
 .content-information{
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 38px;
 }
 
@@ -221,7 +322,7 @@ table {
 }
 
 .place-around-slide-item .place-around-title p{
-	font-size: 36px;
+	font-size: 30px;
 }
 
 .place-around-slide-item .place-around-size{
@@ -251,7 +352,7 @@ table {
 }
 
 #place-comment .point-right-star i{
-	font-size: 72px;
+	font-size: 48px;
 	color: #D9D9D9;
 }
 
@@ -263,7 +364,7 @@ table {
 }
 
 #place-comment .box-point-right .point-right-number p{
-	font-size: 150px;
+	font-size: 100px;
 }
 
 #place-comment .box-point-right .point-right-star{
@@ -292,8 +393,8 @@ table {
 
 #place-comment .box-write-comment .write-comment .button-write-comment{
 	border: 1px solid #188181;
-	height: 107px;
-	width: 704px;
+	height: 85px;
+	width: 563px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -311,7 +412,7 @@ table {
 }
 
 #place-comment .box-write-comment .write-comment .button-write-comment .button-text-comment{
-	font-size: 32px;
+	font-size: 26px;
 }
 
 #place-comment .box-progress{
@@ -330,14 +431,14 @@ table {
 
 #place-comment .box-progress .number-progess span{
 	color: #3F4042;
-	font-size: 36px;
+	font-size: 30px;
 }
 
 
 /* Bài viết đánh giá */
 
 #place-post-comment .title-post-comment{
-	font-size: 36px;
+	font-size: 30px;
 	margin-bottom:45px ;
 	margin-top: 100px;
 }
@@ -353,14 +454,14 @@ table {
 
 
 #place-post-comment .information-people-box{
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
+	margin-top:auto ;
+	margin-bottom:auto ;
+
 	margin-left: 13px;;
 }
 #place-post-comment .information-people-star .point-right-star i{
 	color: #D9D9D9;
-	font-size: 35px;
+	font-size: 24px;
 }
 
 #place-post-comment .information-people-star{
@@ -371,25 +472,26 @@ table {
 #place-post-comment .post-comment-content{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 36px;
+	margin-bottom: 10px;
 }
 
 #place-post-comment .post-comment-content .information-people-name{
-	font-size: 45px;
+	font-size: 24px;
+	margin-bottom: 10px;
 }
 
 #place-post-comment .post-comment-content .information-people-hour{
-	font-size: 32px;
+	font-size: 16px;
 }
 
 
 #place-post-comment .post-comment-content-text{
-	font-size: 36px;
+	font-size: 20px;
 }
 
 #place-post-comment .information-people-img img{
-	width: 86px;
-	height: 86px;
+	width: 68px;
+	height: 68px;
 	border-radius:50% ;
 
 }
@@ -400,6 +502,9 @@ table {
 
 
 /* pagination */
+#pagination-page{
+	margin-bottom:80px;
+}
 
 #pagination-page .pagination{
 	justify-content: center;
@@ -417,7 +522,7 @@ table {
 }
 
 #pagination-page .page-item a{
-	font-size: 28px
+	font-size: 25px
 }
 
 
@@ -434,7 +539,7 @@ table {
 
 
 #place-category .category-title h1{
-	font-size: 36px;
+	font-size: 30px;
 	text-transform: uppercase;
 	color: #3F4042;
 	margin-bottom: 16px;
@@ -466,7 +571,7 @@ table {
 
 #place-category .place-category-item .place-category-item-title a{
 	color: #fff;
-	font-size: 36px;
+	font-size: 30px;
 } 
 
 #place-category .place-category-item .place-category-item-title{
@@ -626,8 +731,12 @@ table {
 	margin-bottom: 125px;
 }
 
+#section-news-content .news-main p{
+	font-size: 18px
+}
+
 #section-news-content .news-main h1{
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: 400;
 	text-transform: uppercase;
 	margin-bottom: 16px;
@@ -639,17 +748,17 @@ table {
 }
 
 #section-news-content .news-sidebar-item{
-	margin-left: 94px;
+	margin-left: 18%;
 	margin-bottom: 46px;
 }
 
 #section-news-content .news-sidebar-box-title{
-	margin-left: 94px;
-	margin-bottom: 36px;
+	margin-left: 18%;
+	margin-bottom: 30px;
 }
 
 #section-news-content .news-sidebar-box-title h2{
-	font-size: 36px;
+	font-size: 30px;
 }
 
 #section-news-content .news-main .title-news{
@@ -662,7 +771,7 @@ table {
 }
 
 #section-news-content .news-main .content-news{
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 32.8px;
 }
 
@@ -690,9 +799,14 @@ table {
 }
 
 /* tin tuc khac */
+
+#section-news-other .news-other{
+	margin-bottom: 46px;
+}
+
 #section-news-other .news-other-box-title h2{
-	font-size: 36px;
-	text-transform: uppercase;
+	font-size: 30px;
+	
 }
 
 #section-news-other .news-other-box-title{
@@ -718,7 +832,7 @@ table {
 
 #section-news-other .news-other .title-news-other a{
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 25px;
 	color:#3F4042;
 }
 
@@ -732,3 +846,56 @@ table {
 
 
 
+
+
+
+/* responsive */
+@media (max-width:768px){
+
+	/* trang chi tiết tin tức */
+	#section-news-content .news-sidebar-item{
+		margin-left: 0;
+	}
+
+	#section-news-content .news-sidebar{
+		margin-top: 40px;
+	}
+
+	#section-news-content .news-sidebar-box-title{
+		margin-left: 0;
+	}
+
+	#section-news-content .news-sidebar-box-title h2{
+		font-size: 30px;
+	}
+
+	#section-news-content .news-main h1{
+		font-size: 29px
+	}
+
+	#section-news-content .news-sidebar .title-news-sidebar a{
+		font-size: 25px
+	}
+
+	#section-news-content .news-main .content-news{
+		font-size: 20px;
+		line-height: 1.3;
+	}
+
+	#section-news-other .news-other-box-title h2{
+		font-size: 30px;
+	}
+
+	.breadcrumb-page .breadcrumb-item a{
+		font-size: 20px;
+		color: #3F4042;
+	}
+	
+	.breadcrumb-page .breadcrumb-item{
+		font-size: 20px;
+		color: #3F4042;
+	}
+
+
+
+}
