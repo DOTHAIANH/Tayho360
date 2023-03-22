@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Korinna';
+	/* font-family: ''; */
 }
 
 a{
@@ -850,6 +850,59 @@ table {
 
 
 /* responsive */
+@media (max-width: 576px){
+	#place-detail .place-img-slide{
+		padding-left: 0;
+	}
+
+	#place-detail .place-content {
+		margin-bottom: 40px;
+	}
+}
+
+
+@media (max-width:1025px){
+	/* chi tiết địa điẻm */
+	#place-detail .place-img-slide .slick-next{
+		right: 27px;
+		top: 155px;
+
+	}
+
+	/* #place-detail .place-img-slide {
+		padding-left: 177px;
+	} */
+
+	#place-detail .place-img-slide .slick-arrow{
+		width: 55px;
+    	height: 55px;
+	}
+
+	/* ddai */
+	#place-around-section .place-around-slide .slick-next{
+		right:-7px;
+		top: 107px;
+
+	}
+
+	#place-around-section .place-around-slide .slick-prev{
+		left:-7px;
+		top: 107px;
+	}
+
+	#place-around-section .place-around-slide .slick-arrow{
+		font-size: 30px;
+		width: 55px;
+    	height: 55px;
+	}
+
+	#place-around-section .place-around-slide .slick-next{
+
+	}
+}
+
+
+
 @media (max-width:768px){
 
 	/* trang chi tiết tin tức */
