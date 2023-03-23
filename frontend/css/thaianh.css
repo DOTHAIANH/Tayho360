@@ -861,3 +861,136 @@ table {
     line-height: normal;
 }
 
+/* thongbao.html */
+
+.box-search-notification {
+    margin-top: -36px !important;
+}
+
+.title-notification .box-text-notifi {
+    width: 98%;
+}
+
+.title-notification .box-icon-notifi {
+    width: 2%;
+}
+
+.title-notification .box-text-notifi p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}
+
+.box-details-notification {
+    padding: 15px 20px 11px 20px;
+    border: 1px solid rgba(63, 64, 66, 0.5);
+}
+
+.box-details-notification .box-img-bdn {
+    width: 10%;
+}
+
+.box-details-notification .box-img-bdn img {
+    width: 100%;
+    height: auto;
+}
+
+.box-details-notification .box-text-bdn {
+    margin-left: 10px;
+    width: 90%;
+}
+
+.box-details-notification .box-text-bdn .title-bt-bdn p {
+    font-size: 22px;
+    margin-top: 4px;
+    line-height: normal;
+    text-align: left;
+}
+
+.box-details-notification .box-text-bdn .content-bt-bdn {
+}
+
+.box-details-notification .box-text-bdn .content-bt-bdn p {
+    font-size: 16px;
+    line-height: normal;
+}
+
+.box-details-notification .box-text-bdn .content-bt-bdn {
+    justify-content: space-between;
+}
+
+.bg-fill-first {
+    background: rgba(90, 174, 158, 0.62);
+}
+
+.notification .nav-tabs .nav-item button {
+    border-radius: 0 !important;
+    padding: 0;
+}
+
+.notification .nav {
+    display: block;
+}
+
+.notification .nav-item {
+    width: 100% !important;
+}
+
+.notification .nav-tabs {
+    background: none !important;
+    border: none !important;
+}
+
+.notification .nav-item button {
+    padding: 0 !important;
+}
+
+.notification .nav-tabs .nav-item .active {
+    border: none !important;
+}
+
+.notification .title-notification {
+    margin-bottom: 60px;
+}
+
+.notification .tab-notifi-content {
+    background: #ffffff;
+    padding: 15px 10px 11px 10px;
+}
+
+.notification .tab-notifi-content .flex {
+    justify-content: space-between;
+}
+
+.tab-notifi-content .box-text-bdn {
+    line-height: normal;
+}
+
+.tab-notifi-content .box-img-bdn {
+    width: 20%;
+}
+
+.tab-notifi-content .box-img-bdn img {
+    width: 100%;
+    height: auto;
+}
+
+.tab-notifi-content .box-text-bdn {
+    margin-top: 5px;
+}
+
+.tab-notifi-content .box-content-bdn {
+    margin-top: 30px;
+}
+
+.tab-notifi-content .box-content-bdn .text-details {
+    margin-top: 20px;
+}
+
+.bg-5aae9e62 {
+    background: rgba(90, 174, 158, 0.62);
+}
+
+.bg-5aae9e32 {
+    background: rgba(90, 174, 158, 0.32);
+}
