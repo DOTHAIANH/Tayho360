@@ -756,3 +756,108 @@ table {
     translate: 0px -5px;
     transform: translateX(5px);
 }
+
+/* bookingonline.html */
+
+/* #booking-tabs {
+    margin-top: -37px;
+} */
+
+#bg-booking-online .box-image-booking {
+    width: 100%;
+    height: 600px;
+}
+
+#booking-tabs .container {
+    max-width: 1520px;
+    padding: 0 200px;
+}
+
+#booking-tabs .nav-tabs {
+    border: none;
+}
+
+#booking-tabs .nav-tabs .nav-item.show .nav-link,#booking-tabs .nav-tabs .nav-link.active {
+    border: none;
+}
+
+#booking-tabs .nav-tabs .nav-item .active {
+    background: rgba(24, 129, 129, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#booking-tabs .nav-tabs {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    background: #ffffff;
+}
+
+#booking-tabs .nav-item {
+    width: 33.333333%;
+    border-radius: 24px;
+}
+
+#booking-tabs .nav-tabs .nav-item button {
+    width: 100%;
+    border-radius: 24px;
+    padding: 24px 0 20px 0;
+    font-size: 24px;
+    color: #326845;
+}
+
+#booking-tabs .nav-tabs .nav-item .active {
+    color: #ffffff;
+}
+
+#booking-tabs .box-search {
+    margin: 52px 0;
+}
+
+#booking-tabs .box-search label {
+    width: 100%;
+}
+
+#booking-tabs .box-search label input {
+    width: 100%;
+    background: #DEECEA;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    padding: 26px 114px 22px 114px;
+}
+
+#booking-tabs .box-search label input::placeholder {
+    font-size: 24px;
+    color: rgba(24, 129, 129, 0.54);
+}
+
+#booking-tabs .box-search label .box-icon {
+    font-size: 32px;
+    top: 20px;
+    left: 48px;
+}
+
+#booking-tabs .box-search label .box-icon i {
+    color: #188181;
+}
+
+#booking-tabs .tab-content .tab-pane tr:first-child {
+    background-color: #188181;
+}
+
+#booking-tabs .tab-content .tab-pane tr th {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 10px;
+    color: #ffffff;
+    line-height: normal;
+}
+
+#booking-tabs .tab-content .tab-pane tr td {
+    text-align: center;
+    font-size: 16px;
+    padding: 24px;
+    color: #3F4042;
+    line-height: normal;
+}
+

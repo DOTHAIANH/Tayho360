@@ -59,6 +59,7 @@ $('.box-slide-tth').on('init', function(event, slick) {
 $(document).ready(function () {
 
     $('.slide-vn360').slick({
+        infinite: true,
         centerMode: true,
         slidesToShow: 3,
         infinite: false,
