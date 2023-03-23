@@ -106,7 +106,17 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Korinna';
+    src: url('../font/Korinna/Korinna.woff2') format('woff2'),
+        url('../font/Korinna/Korinna.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 html {
-	font-family: 'Shantell Sans' !important;
+	font-family: 'Korinna' !important;
+    font-weight: 700;
 }
