@@ -238,11 +238,11 @@ table {
 	margin: auto
 }
 
-.button-content{
+#place-detail .button-content{
 	display: flex;
 }
 
-.button-content button{
+#place-detail .button-content button{
 	width: 162px;
 	height: 45px;
 	background-color: transparent;
@@ -259,24 +259,24 @@ table {
 	font-size: 18px;
 }
 
-.title-information{
+#place-information .title-information{
 	color: #3F4042;
 	font-size: 30px;
 	text-transform: uppercase;
 }
 
-.icon-information{
+#place-information .icon-information{
 	display: flex;
 	justify-content: space-between;
 }
 
-.icon-information p{
+#place-information .icon-information p{
 	color: #3F4042;
 	font-size: 28px;
 	
 }
 
-.icon-information i{
+#place-information .icon-information i{
 	color:#126B66;
 }
 
@@ -296,7 +296,7 @@ table {
 }
 
 .place-around-box-address .place-around-address p{
-	font-size: 28px
+	font-size: 22px
 }
 
 .place-around-box-address .place-around-address{
@@ -321,8 +321,9 @@ table {
 	margin-bottom: 14px
 }
 
-.place-around-slide-item .place-around-title p{
+.place-around-slide-item .place-around-title a{
 	font-size: 30px;
+	color:#3F4042
 }
 
 .place-around-slide-item .place-around-size{
@@ -388,7 +389,6 @@ table {
 	display: flex;
 	justify-content: center;
 	
-	
 }
 
 #place-comment .box-write-comment .write-comment .button-write-comment{
@@ -401,6 +401,13 @@ table {
 	align-items: center;
 	border-radius:30px;
 	background-color: transparent;
+	transition: .5s;
+}
+
+#place-comment .box-write-comment .write-comment .button-write-comment:hover{
+	background-color: red;
+	transition: .5s;
+
 }
 
 #place-comment .box-write-comment .write-comment .button-write-comment .button-icon-comment{
@@ -858,6 +865,41 @@ table {
 	#place-detail .place-content {
 		margin-bottom: 40px;
 	}
+
+	#place-detail .button-content button{
+		width: 144px;
+    	height: 45px;
+		font-size: 18px;
+	}
+
+	#place-information .icon-information p{
+		font-size: 23px;
+		margin-bottom: 15px;
+	}
+
+	#place-information .icon-information{
+		display: block;
+	}
+
+	.map-iframe iframe {
+		height: 503px;
+	}
+
+	#place-post-comment .post-comment-content{
+		flex-direction: column;
+	}
+
+	/* binh luan */
+	#place-comment .box-point-right .point-right-number p{
+		font-size: 80px;
+
+	}
+
+	#place-comment .point-right-star i{
+		font-size: 40px;
+	}
+
+	
 }
 
 
