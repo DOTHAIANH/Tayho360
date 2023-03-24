@@ -861,6 +861,7 @@ table {
     line-height: normal;
 }
 
+
 /* thongbao.html */
 
 .box-search-notification {
@@ -1114,6 +1115,12 @@ table {
     border-radius: 10px;
 }
 
+@media (max-width:1200px) {
+    #booking-tabs .container {
+        padding: 0 100px;
+    }
+}
+
 @media (max-width:991px) {
     #booking-tabs .container {
         padding: 0 50px !important;
@@ -1128,14 +1135,21 @@ table {
     .title-notification .box-text-notifi p {
         font-size: 24px;
     }
-    #booking-tabs .box-search label input::placeholder {
+    .notification .box-search label input::placeholder {
         font-size: 20px;
     }
-    #booking-tabs .box-search label .box-icon {
+    .notification .box-search label .box-icon {
         font-size: 22px;
     }
-    #booking-tabs .box-search label input {
+    .notification .box-search label input {
         padding: 20px 114px 20px 114px;
+    }
+    
+    #booking-tabs .tab-content-booking .tab-pane {
+        overflow: auto visible;
+    }
+    #booking-tabs .tab-content-booking .tab-pane table {
+        width: 1000px !important;
     }
 }
 
@@ -1157,13 +1171,13 @@ table {
     .tab-notifi-content .box-content-bdn {
         font-size: 13px;
     }
-    #booking-tabs .box-search label input::placeholder {
+    .notification .box-search label input::placeholder {
         font-size: 16px;
     }
-    #booking-tabs .box-search label input {
+    .notification .box-search label input {
         padding: 20px 70px 20px 70px;
     }
-    #booking-tabs .box-search label .box-icon {
+    .notification .box-search label .box-icon {
         top: 19px;
         left: 30px;
     }
@@ -1177,7 +1191,7 @@ table {
 }
 
 @media (max-width:450px) {
-    #booking-tabs .container {
+    .notification .container {
         padding: 0 25px !important;
     }
     .box-details-notification {
