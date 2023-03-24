@@ -782,7 +782,7 @@ table {
 }
 
 #booking-tabs .nav-tabs .nav-item .active {
-    background: rgba(24, 129, 129, 0.5);
+    background: rgba(24, 129, 129, 0.5) !important;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -800,7 +800,7 @@ table {
 #booking-tabs .nav-tabs .nav-item button {
     width: 100%;
     border-radius: 24px;
-    padding: 24px 0 20px 0;
+    padding: 21px 0 23px 0;
     font-size: 24px;
     color: #326845;
 }
@@ -871,14 +871,98 @@ table {
     width: 98%;
 }
 
-.title-notification .box-icon-notifi {
-    width: 2%;
+.title-notification .box-icon-notifi .btn i {
+    color: #3F4042;
+    transition: .8s;
+}
+
+.title-notification .box-icon-notifi:hover .btn i {
+    transition: .8s;
+    color: #126B66;
+    cursor: pointer;
+}
+
+.btn-setting-notifi {
+    background: none !important;
+    outline: none;
+    border: none;
+    box-shadow: none !important;
 }
 
 .title-notification .box-text-notifi p {
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
+    color: #3F4042;
+}
+
+#booking-tabs .btn-setting-notifi {
+    padding: 0 !important;
+}
+
+#booking-tabs button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+.modal-setting-notifi .modal-title {
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+}
+
+.modal-setting-notifi .modal-header {
+    border: none;
+}
+
+.modal-setting-notifi .modal-footer {
+    border: none;
+}
+
+.modal-setting-notifi .box-icon-sn i {
+    font-size: 16px;
+    margin-right: 15px;
+    color: #126B66;
+    font-weight: 700;
+    margin-top: -3px;
+}
+
+.modal-setting-notifi .box-text-sn p {
+    font-size: 16px;
+}
+
+.modal-setting-notifi .modal-body {
+    justify-content: space-between;
+    height: 250px;
+}
+
+ .modal-setting-notifi .btn-on-off .form-switch .form-check-input {
+    width: 40px;
+    height: 20px;
+}
+
+.modal-setting-notifi .btn-on-off .form-check-input:focus {
+    box-shadow: none !important;
+}
+
+.modal-setting-notifi .btn-on-off .form-switch .form-check-input:checked {
+    background-color: #ffffff;
+    background-position: right center;
+    background-image: url(../img/thaianhimg/icon-toggle.png) !important;
+}
+
+.modal-setting-notifi .btn-on-off .form-switch .form-check-input:checked[type=checkbox] {
+    background-image: url(../img/thaianhimg/icon-toggle.png) !important;
+}
+
+.modal-setting-notifi .btn-on-off .form-switch .form-check-input {
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-image: url(../img/thaianhimg/icon-toggle.png) !important;
+    border-radius: 8px !important;
+}
+
+.modal-setting-notifi .btn-on-off {
+    margin-top: -5px;
 }
 
 .box-details-notification {
@@ -905,14 +989,13 @@ table {
     margin-top: 4px;
     line-height: normal;
     text-align: left;
-}
-
-.box-details-notification .box-text-bdn .content-bt-bdn {
+    color: #000;
 }
 
 .box-details-notification .box-text-bdn .content-bt-bdn p {
     font-size: 16px;
     line-height: normal;
+    color: #000;
 }
 
 .box-details-notification .box-text-bdn .content-bt-bdn {
@@ -955,7 +1038,7 @@ table {
 
 .notification .tab-notifi-content {
     background: #ffffff;
-    padding: 15px 10px 11px 10px;
+    padding: 15px;
 }
 
 .notification .tab-notifi-content .flex {
@@ -987,10 +1070,132 @@ table {
     margin-top: 20px;
 }
 
-.bg-5aae9e62 {
-    background: rgba(90, 174, 158, 0.62);
+.bg-new-notifi {
+    background: rgba(90, 174, 158, 0.62) !important;
 }
 
-.bg-5aae9e32 {
-    background: rgba(90, 174, 158, 0.32);
+.bg-havent-seen {
+    background: rgba(90, 174, 158, 0.32) !important;
+}
+
+/* #pagination */ 
+
+#pagination-page {
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+#pagination-page ul {
+    display: flex; 
+    justify-content: center;
+}
+
+#pagination-page ul li a i {
+    color: #3F4042;
+    font-size: 20px;
+}
+
+#pagination-page ul li {
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+#pagination-page ul li a {
+    padding: 10px 16px;
+    font-size: 20px;
+    color: #3F4042;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Korinna' !important;
+}
+
+#pagination-page ul li:hover {
+    border: 2px solid #188181;
+    border-radius: 10px;
+}
+
+@media (max-width:991px) {
+    #booking-tabs .container {
+        padding: 0 50px !important;
+    }
+}
+
+@media (max-width:768px) {
+    .tab-notifi-content .box-img-bdn {
+        width: 48px;
+        height: 48px;
+    }
+    .title-notification .box-text-notifi p {
+        font-size: 24px;
+    }
+    #booking-tabs .box-search label input::placeholder {
+        font-size: 20px;
+    }
+    #booking-tabs .box-search label .box-icon {
+        font-size: 22px;
+    }
+    #booking-tabs .box-search label input {
+        padding: 20px 114px 20px 114px;
+    }
+}
+
+@media (max-width:500px) {
+    .box-details-notification .box-img-bdn {
+        width: 40px;
+    }
+    .box-details-notification .box-text-bdn .title-bt-bdn p {
+        margin-top: 0;
+        font-size: 18px;
+    }
+    .box-details-notification .box-text-bdn .content-bt-bdn p {
+        font-size: 13px;
+    }
+    .tab-notifi-content .box-text-bdn {
+        margin-top: 0;
+        font-size: 13px;
+    }
+    .tab-notifi-content .box-content-bdn {
+        font-size: 13px;
+    }
+    #booking-tabs .box-search label input::placeholder {
+        font-size: 16px;
+    }
+    #booking-tabs .box-search label input {
+        padding: 20px 70px 20px 70px;
+    }
+    #booking-tabs .box-search label .box-icon {
+        top: 19px;
+        left: 30px;
+    }
+    #pagination-page ul li a {
+        font-size: 18px;
+        padding: 8px 14px;
+    }
+    #pagination-page ul li a i {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:450px) {
+    #booking-tabs .container {
+        padding: 0 25px !important;
+    }
+    .box-details-notification {
+        padding: 15px 10px 11px 10px;
+    }
+}
+
+@media (max-width:425px) {
+    .box-details-notification .box-text-bdn .title-bt-bdn p {
+        font-size: 15px;
+    }
+    .box-details-notification .box-text-bdn .content-bt-bdn p {
+        font-size: 11px;
+    }
+}
+
+@media (min-width:576px) {
+    .modal-setting-notifi .modal-dialog {
+        margin: 10.00rem auto;
+    }
 }

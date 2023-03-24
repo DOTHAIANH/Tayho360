@@ -31,7 +31,7 @@
     
 </head>
 <body>
-    <header>
+    <!-- <header>
         <section class="section-top-bar">
             <div class="top-bar container .container-header-menu">
                 <div class="row">
@@ -93,7 +93,7 @@
                 </div>
             </div>
         </section>
-    </header>
+    </header> -->
 
     <section id="bg-booking-online">
         <div class="box-image-booking" style="background: url(../img/thaianhimg/bgbooking.jpg) 50%; background-size: cover; background-repeat: no-repeat;">
@@ -119,17 +119,17 @@
                             <p>Thông báo</p>
                         </div>
                         <div class="box-icon-notifi">
-                            <i class="fa-solid fa-gear"></i>
+                            <button type="button" class="btn btn-primary btn-setting-notifi" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-gear"></i></button>    
                         </div>
                     </div>
 
                 </div>
 
-                <div class="col-lg-8" style="padding: 0 7px">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12" style="padding: 0 7px">
                     
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="home-1-tab" data-bs-toggle="tab" data-bs-target="#home-1" type="button" role="tab" aria-controls="home-1" aria-selected="true">
+                          <button class="nav-link active bg-new-notifi" id="home-1-tab" data-bs-toggle="tab" data-bs-target="#home-1" type="button" role="tab" aria-controls="home-1" aria-selected="true">
                             <div class="box-details-notification flex">
                                 <div class="box-img-bdn">
                                     <img src="../img/thaianhimg/avatarnotifi.png" alt="">
@@ -151,7 +151,7 @@
                           </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="home-2-tab" data-bs-toggle="tab" data-bs-target="#home-2" type="button" role="tab" aria-controls="home-2" aria-selected="false">
+                            <button class="nav-link bg-havent-seen" id="home-2-tab" data-bs-toggle="tab" data-bs-target="#home-2" type="button" role="tab" aria-controls="home-2" aria-selected="false">
                                 <div class="box-details-notification flex">
                                     <div class="box-img-bdn">
                                         <img src="../img/thaianhimg/avatarnotifi.png" alt="">
@@ -173,7 +173,7 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="home-3-tab" data-bs-toggle="tab" data-bs-target="#home-3" type="button" role="tab" aria-controls="home-3" aria-selected="false">
+                            <button class="nav-link bg-havent-seen" id="home-3-tab" data-bs-toggle="tab" data-bs-target="#home-3" type="button" role="tab" aria-controls="home-3" aria-selected="false">
                                 <div class="box-details-notification flex">
                                     <div class="box-img-bdn">
                                         <img src="../img/thaianhimg/avatarnotifi.png" alt="">
@@ -239,10 +239,22 @@
                             </button>
                         </li>
                     </ul>
+
+                    <div class="pagination-page" id="pagination-page">
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-angle-left"></i></a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i></a></li>
+                        </ul>
+                    </div>
                       
                 </div>
 
-                <div class="col-lg-4" style="padding: 0 7px">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12" style="padding: 0 7px">
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home-1" role="tabpanel" aria-labelledby="home-1-tab">
                             <div class="box-detail-notifi tab-notifi-content">
@@ -399,6 +411,37 @@
             </div>
         </div>
     </div>
+
+      <!-- Modal -->
+      <div class="modal fade modal-setting-notifi" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cài đặt thông báo</h5>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body flex">
+              <div class="flex">
+                <div class="box-icon-sn">
+                    <i class="fa-regular fa-bell-slash"></i>
+                </div>
+                <div class="box-text-sn">
+                  <p>Thông báo qua notification</p>
+                </div>
+              </div>
+              <div class="btn-on-off">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
 
 </body>
 </html>
