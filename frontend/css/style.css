@@ -926,6 +926,17 @@ color: #188181;
 	margin-bottom: 90px;
 }
 
+/* sign in */
+#section-sign .container-sign{
+	background: #FFFFFF;
+	border: 2px solid rgba(63, 64, 66, 0.5);
+	border-radius: 40px;
+}
+
+#section-sign .box-sign{
+	padding-top: 76px;
+	padding-bottom: 60px;
+} 
 
 
 
