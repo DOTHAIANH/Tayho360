@@ -21,6 +21,18 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
       />
 
+    <!-- MAP JS API -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <style type="text/css">
+        #mapid{
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+
+
     <!-- CSS -->
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/thaianh.css">
@@ -611,14 +623,48 @@
     </div>
 
     <div id="map-home">
-        
         <div class="event-home-title">
             <p>Bản đồ 360</p>
             <div class="article-space"></div>
         </div>
-        <div class="box-iframe-gg">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59569.39069914208!2d105.78571479233239!3d21.069190409816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aae54053e2d5%3A0x2d72b1d7c422234b!2zVMOieSBI4buTLCBIYW5vaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1679283444234!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="mapid">
+            <div class="check-box-map absolute">
+                <form action="">
+                    <div class="container">
+                        <div class="row">
+                            <label class="col-lg-12"><p>Danh sách điểm đến</p></label>
+                            <label class="col-lg-12"><input type="checkbox" id="vehicle1" name="vehicle1" value="">Chọn tất cả</label>
+                            <label class="col-lg-12"><input type="checkbox" id="vehicle1" name="vehicle1" value="">Di tích văn hoá, lịch sử</label>
+                            <label class="col-lg-12"><input type="checkbox" id="vehicle1" name="vehicle1" value="">Danh lam</label>
+                            <label class="col-lg-12"><input type="checkbox" id="vehicle1" name="vehicle1" value="">Làng nghề</label>
+                            <label class="col-lg-12"><input type="checkbox" id="vehicle1" name="vehicle1" value="">Lễ hội</label>
+                            <label class="col-lg-12"><input type="checkbox" id="vehicle1" name="vehicle1" value="">Trụ sở cơ quan, hành chính</label>
+                            <label class="col-lg-12"><input type="checkbox" id="vehicle1" name="vehicle1" value="">Khách sạn</label>
+                            <label class="col-lg-12"><input type="checkbox" id="vehicle1" name="vehicle1" value="">Nhà hàng quán ăn</label>
+                            <label class="col-lg-12"><input type="checkbox" id="vehicle1" name="vehicle1" value="">Dịch vụ hỗ trợ du lịch</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="book-icon-map absolute">
+                <div class="box-img-icon">
+                    <img src="../img/thaianhimg/bookmapicon.png" alt="">
+                </div>
+                <div class="box-img-icon">
+                    <img src="../img/thaianhimg/bookmapicon.png" alt="">
+                </div>
+                <div class="box-img-icon">
+                    <img src="../img/thaianhimg/bookmapicon.png" alt="">
+                </div>
+                <div class="box-img-icon">
+                    <img src="../img/thaianhimg/bookmapicon.png" alt="">
+                </div>
+                <div class="box-img-icon">
+                    <img src="../img/thaianhimg/bookmapicon.png" alt="">
+                </div>
+            </div>
         </div>
+        
     </div>
 
     <div id="viet-nam-360">
@@ -664,8 +710,72 @@
     referrerpolicy="no-referrer"
     ></script>
 
+    <script type="text/javascript">
+        /*
+        var keyMap = 'efe2301638f6af0bd594f5f607d6dc86ea53e3406d158d44';
+        var mymap = L.map('mapid').setView([21.029321, 105.783150], 18);
+        
+        L.tileLayer('https://maps.vnpost.vn/api/tm/{z}/{x}/{y}@@2x.png?apikey='+keyMap, {
+            attribution: 'Map data &copy; <a href="https://vmap.vn">Vmap</a>, <a href="http://openstreetmap.org">OSM Contributors</a>',
+            maxZoom: 18,
+            id: 'Vmap.streets',
+            accessToken: keyMap
+        }).addTo(mymap);
+    
+        const marker1 = L.marker([-37.699450, 176.279420]).addTo(map);
+        const marker2 = L.marker([-27.643310, 153.305140]).addTo(map);
+        const marker3 = L.marker([-33.956330, 122.150270]).addTo(map);
+        const marker4 = L.marker([-34.962390, 117.391220]).addTo(map);
+        const marker5 = L.marker([-17.961210, 122.214820]).addTo(map);
+        const marker6 = L.marker([-16.505960, 151.751520]).addTo(map);
+        const marker7 = L.marker([-22.594400, 167.484440]).addTo(map);
+        const marker8 = L.marker([-37.977000, 177.057000]).addTo(map);
+        const marker9 = L.marker([-41.037600, 173.017000]).addTo(map);
+        const marker10 = L.marker([-37.670300, 176.212000]).addTo(map);
+        */
+    
+        var keyMap = 'efe2301638f6af0bd594f5f607d6dc86ea53e3406d158d44';
+    
+        const map = L.map('mapid', {
+          center: [21.02923538766046, 105.85243979738055],
+          zoom: 15,
+        });
+    
+        /*
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+        */
+    
+        L.tileLayer('https://maps.vnpost.vn/api/tm/{z}/{x}/{y}@@2x.png?apikey='+keyMap, {
+            attribution: 'Map data &copy; <a href="https://vmap.vn">Vmap</a>, <a href="http://openstreetmap.org">OSM Contributors</a>',
+            maxZoom: 18,
+            id: 'Vmap.streets',
+            accessToken: keyMap
+        }).addTo(map);
+    
+        const basicBeachIcon = L.icon({
+          iconUrl: 'https://raw.githubusercontent.com/shacheeswadia/leaflet-map/main/beach-icon-chair.svg',
+          iconSize: [40, 40],
+        });
+    
+        const marker1 = L.marker([21.030246825294828, 105.85041204751434], {icon: basicBeachIcon}).bindPopup('<a href="https://google.com">Whitehaven Beach</a>, Whitsunday Island').addTo(map);
+        const marker2 = L.marker([21.031658820808374, 105.85088411626627]).addTo(map);
+        const marker3 = L.marker([21.031758961826064, 105.85336247721385]).addTo(map);
+        const marker4 = L.marker([21.03116812884888, 105.85402766500063]).addTo(map);
+        const marker5 = L.marker([21.030356981454354, 105.85408130917699]).addTo(map);
+        const marker6 = L.marker([21.02752293799686, 105.85449973375255]).addTo(map);
+        const marker7 = L.marker([21.026080859861658, 105.85369507110723]).addTo(map);
+        const marker8 = L.marker([21.025552013188648, 105.85257721340632]).addTo(map);
+        const marker9 = L.marker([21.024928625319774, 105.84812486821026]).addTo(map);
+        const marker10 = L.marker([21.028720861159282, 105.84638567093732]).addTo(map);
+    
+    </script>
+
     <script src="../js/particle.js"></script>
     <script src="../js/slickslide.js"></script>
 
 </body>
 </html>
+
+
+
+

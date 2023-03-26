@@ -1115,9 +1115,89 @@ table {
     border-radius: 10px;
 }
 
+/* #map-home */
+
+#mapid {
+    font-family: 'Korinna' !important;
+    font-weight: 400 !important;
+    color: #ffffff;
+}
+
+#map-home .check-box-map {
+    background-color: #6FABA1;
+    top: 0;
+    z-index: 999;
+    padding: 40px 45px 40px 55px;
+    width: 350px;
+    height: 480px;
+    left: 80px;
+    border-radius: 20px;
+}
+
+#map-home .check-box-map label {
+    font-size: 16px;
+    line-height: normal;
+}
+
+#map-home .check-box-map label input {
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+#map-home .check-box-map label input:checked[type=checkbox] {
+    border: none;
+    color: #3F4042;
+    background-color: #ffffff;
+}
+
+#map-home .check-box-map label p {
+    font-size: 22px !important;
+    margin-bottom: 25px;
+}
+
+#map-home #mapid {
+    height: 1100px !important;
+}
+
+#map-home #mapid .book-icon-map .box-img-icon img {
+    width: 70%;
+    height: auto;
+}
+
+#map-home #mapid .book-icon-map .box-img-icon {
+    margin-bottom: 30px;
+}
+
+#map-home #mapid .book-icon-map {
+    z-index: 1000;
+    left: 62px;
+    top: 35px;
+}
+
+
+
+@media (max-width:1300px) {
+    .lshowcase-boxInner {
+        width: 80px;
+        height: 80px;
+        padding: 10%;
+    }
+    .lshowcase-boxInner img {
+        width: 55%;
+    }
+}
+
 @media (max-width:1200px) {
     #booking-tabs .container {
         padding: 0 100px;
+    }
+}
+
+@media (max-width:1050px) {
+    .lshowcase-boxInner {
+        width: 70px;
+        height: 70px;
+        padding: 12%;
     }
 }
 

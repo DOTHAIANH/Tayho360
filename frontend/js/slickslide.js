@@ -7,7 +7,7 @@ $(document).ready(function () {
     $('.in-box-event-home').slick({
         dots: false,
         infinite: true,
-        arrows: false,
+        arrows: true,
         speed: 500,
         fade: true,
         cssEase: 'linear',
