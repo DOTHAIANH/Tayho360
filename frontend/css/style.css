@@ -64,6 +64,10 @@ table {
 	margin-bottom: 50px;
 }
 
+.mgb-36{
+	margin-bottom: 36px;
+}
+
 /* arrow */
 
 #place-detail .place-img-slide{
@@ -762,6 +766,8 @@ color: #188181;
 	outline: none;
 }
 
+
+
 #section-background-index .form-select-filter{
 	font-size: 22px;
 	background: rgba(59, 146, 129, 0.17);
@@ -926,7 +932,12 @@ color: #188181;
 	margin-bottom: 90px;
 }
 
-/* sign in */
+/* form đăng ký đăng nhập*/
+
+#section-sign{
+	margin-top: 34px;
+}
+
 #section-sign .container-sign{
 	background: #FFFFFF;
 	border: 2px solid rgba(63, 64, 66, 0.5);
@@ -936,11 +947,145 @@ color: #188181;
 #section-sign .box-sign{
 	padding-top: 76px;
 	padding-bottom: 60px;
+	padding-left:90px;
 } 
 
+#section-sign .box-sign .nav-item-sign{
+	width: 50%;
+}
 
 
+#section-sign .nav-link-sign.active{
+	border-bottom:1px solid #188181;
+	color: #000000
+}
 
+#section-sign .nav-link-sign{
+	font-size: 28px;
+	color: #000000;
+	border: none;
+	width: 100%;
+}
+
+#section-sign .form-sign-in{
+	margin-top: 90px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#section-sign .input-sign-in-user, #section-sign .input-sign-in-password{
+	padding-left:25px;
+	border: 1px solid rgba(63, 64, 66, 0.5);
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 46px;
+	
+}
+
+#section-sign #sign-in-name, #section-sign #sign-in-password{
+	border: none;
+	font-size: 20px;
+
+}
+
+#section-sign #sign-in-name:focus, #section-sign #sign-in-password:focus{
+	box-shadow: none;
+}
+
+#section-sign #sign-in-name::placeholder, #section-sign #sign-in-password::placeholder{
+	font-size: 20px;
+}
+
+#section-sign #sign-in-name:focus-visible, #section-sign #sign-in-password:focus-visible {
+	outline: none;
+}
+
+#section-sign .input-sign-in-user .user-label i, #section-sign .input-sign-in-password .password-label i{
+	color:#126B66;
+	font-size: 21px;
+}
+
+#section-sign .input-sign-in-user .user-label, #section-sign .input-sign-in-password .password-label{
+	margin: auto;
+}
+
+#section-sign .form-sign-in .button-sign-in{
+	border: none;
+	background-color: #188181;
+	width: 295px;
+	height: 48px;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+#section-sign .form-sign-in .forgot-password{
+	font-size: 18px;
+	margin-bottom: 80px;
+}
+
+#section-sign .form-sign-in .forgot-password a{
+	color: #188181;
+}
+
+#section-sign .form-sign-in .sign-in-other p{
+	margin-bottom: 32px;
+	color: #747476;
+	font-size: 18px;
+
+}
+
+#section-sign .form-sign-in .sign-in-other{
+	text-align: center;
+}
+
+#section-sign .form-sign-in .sign-in-other a{
+	font-size: 40px;
+}
+
+#section-sign .form-sign-in .sign-in-other .sign-in-mobile{
+	color: #000
+}
+
+#section-sign .form-sign-in .sign-in-other .sign-in-google{
+	color: #E34133;
+	margin:0 21px
+
+}
+
+#section-sign .form-sign-in .sign-in-other .sign-in-facebook{
+	color: #1773EA;
+}
+
+#section-sign .sign-background-right img{
+	width: 100%;
+}
+
+/* quên mật khẩu */
+#section-forgot-password .container-sign{
+	background: #FFFFFF;
+	border: 2px solid rgba(63, 64, 66, 0.5);
+	border-radius: 40px;
+	height: 741px;
+}
+
+#section-forgot-password .box-forgot-password{
+	padding-left: 127px;
+}
+
+#section-forgot-password .box-forgot-password .title-forgot-password p{
+	font-size: 27px;
+	color: #000;
+}
+
+#section-forgot-password .box-forgot-password .content-forgot-password p{
+	font-size: 27px;
+	color: #000;
+}
 
 
 
