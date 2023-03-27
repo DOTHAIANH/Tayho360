@@ -938,7 +938,7 @@ color: #188181;
 	margin-top: 34px;
 }
 
-#section-sign .container-sign{
+#section-sign .container-sign, #section-verify-account .container-verify{
 	background: #FFFFFF;
 	border: 2px solid rgba(63, 64, 66, 0.5);
 	border-radius: 40px;
@@ -977,7 +977,7 @@ color: #188181;
 	align-items: center;
 }
 
-#section-sign .input-sign-in-user, #section-sign .input-sign-in-password{
+#section-sign .input-sign-in-user, #section-sign .input-sign-in-password, #section-change-password .input-change-password{
 	padding-left:25px;
 	border: 1px solid rgba(63, 64, 66, 0.5);
 	border-radius: 10px;
@@ -987,30 +987,30 @@ color: #188181;
 	
 }
 
-#section-sign #sign-in-name, #section-sign #sign-in-password{
+#section-sign #sign-in-name, #section-sign #sign-in-password, #section-change-password #change-password, #section-change-password #verify-change-password{
 	border: none;
 	font-size: 20px;
 
 }
 
-#section-sign #sign-in-name:focus, #section-sign #sign-in-password:focus{
+#section-sign #sign-in-name:focus, #section-sign #sign-in-password:focus,#section-change-password #change-password:focus, #section-change-password #verify-change-password:focus{
 	box-shadow: none;
 }
 
-#section-sign #sign-in-name::placeholder, #section-sign #sign-in-password::placeholder{
+#section-sign #sign-in-name::placeholder, #section-sign #sign-in-password::placeholder, #section-change-password #change-password::placeholder, #section-change-password #verify-change-password::placeholder{
 	font-size: 20px;
 }
 
-#section-sign #sign-in-name:focus-visible, #section-sign #sign-in-password:focus-visible {
+#section-sign #sign-in-name:focus-visible, #section-sign #sign-in-password:focus-visible, #section-change-password #change-password:focus-visible, #section-change-password #verify-change-password:focus-visible{
 	outline: none;
 }
 
-#section-sign .input-sign-in-user .user-label i, #section-sign .input-sign-in-password .password-label i{
+#section-sign .input-sign-in-user .user-label i, #section-sign .input-sign-in-password .password-label i,#section-change-password .input-change-password .change-password-label i {
 	color:#126B66;
 	font-size: 21px;
 }
 
-#section-sign .input-sign-in-user .user-label, #section-sign .input-sign-in-password .password-label{
+#section-sign .input-sign-in-user .user-label, #section-sign .input-sign-in-password .password-label, #section-change-password .input-change-password .change-password-label{
 	margin: auto;
 }
 
@@ -1034,26 +1034,26 @@ color: #188181;
 	color: #188181;
 }
 
-#section-sign .form-sign-in .sign-in-other p{
+#section-sign .sign-in-other p{
 	margin-bottom: 32px;
 	color: #747476;
 	font-size: 18px;
 
 }
 
-#section-sign .form-sign-in .sign-in-other{
+#section-sign .sign-in-other{
 	text-align: center;
 }
 
-#section-sign .form-sign-in .sign-in-other a{
+#section-sign .sign-in-other a{
 	font-size: 40px;
 }
 
-#section-sign .form-sign-in .sign-in-other .sign-in-mobile{
+#section-sign .sign-in-other .sign-in-mobile{
 	color: #000
 }
 
-#section-sign .form-sign-in .sign-in-other .sign-in-google{
+#section-sign .sign-in-other .sign-in-google{
 	color: #E34133;
 	margin:0 21px
 
@@ -1094,9 +1094,10 @@ color: #188181;
 }
 
 #section-forgot-password .input-forgot-password input{
+	width: 470px;
 	padding-left: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	font-size: 20px;
 }
 
@@ -1152,6 +1153,18 @@ color: #188181;
 }
 
 /* xác nhận tài khoản */
+
+#section-verify-account .row-verify-account{
+	height: 741px;
+}
+
+#section-verify-account .box-verify-account{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 127px;
+}
+
 #section-verify-account .title-verify-account p{
 	font-size: 36px;
 }
@@ -1159,6 +1172,137 @@ color: #188181;
 #section-verify-account .content-verify-account p{
 	font-size:28px;
 }
+
+#section-verify-account .button-verify-account button{
+	background-color: #188181;
+    color: #fff;
+    font-size: 22px;
+    width: 237px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+}
+
+#section-verify-account .background-right-sign{
+	position: relative;
+	height: 100%;
+}
+
+#section-verify-account .background-right-sign .background-right-sign-scene{
+	position: absolute;
+    top: -20%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 128%;
+}
+
+#section-verify-account .background-right-sign .background-right-sign-scene img{
+	width: 800px;
+    height: 1000px;
+}
+
+
+#section-verify-account .background-right-sign .background-right-sign-circle img{
+	width: 100%;
+}
+
+#section-verify-account .row.row-forgot-password {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 40px;
+}
+
+#section-verify-account .background-right-sign-circle {
+	height: 1421px;
+	width: 1421px;
+	background-color: #8BBEB5;
+	border-radius: 50%;
+	position: absolute;
+	right: -150%;
+	top: -50%;
+}
+
+#section-verify-account .input-verify{
+	height: 60px;
+	width: 60px;
+	font-size: 22px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+#section-verify-account .group-input-verify{
+	margin-bottom: 32px;
+}
+
+/* đổi mật khẩu */
+
+#section-change-password .row-change-password{
+	height: 741px;
+}
+
+#section-change-password .background-right-sign{
+	position: relative;
+	height: 100%;
+}
+
+#section-change-password .background-right-sign .background-right-sign-scene{
+	position: absolute;
+    top: -20%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 128%;
+}
+
+#section-change-password .background-right-sign .background-right-sign-scene img{
+	width: 800px;
+    height: 1000px;
+}
+
+
+#section-change-password .background-right-sign .background-right-sign-circle img{
+	width: 100%;
+}
+
+#section-change-password .row.row-forgot-password {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 40px;
+}
+
+#section-change-password .background-right-sign-circle {
+	height: 1421px;
+	width: 1421px;
+	background-color: #8BBEB5;
+	border-radius: 50%;
+	position: absolute;
+	right: -150%;
+	top: -50%;
+}
+
+#section-change-password .button-verify-account button{
+	background-color: #188181;
+    color: #fff;
+    font-size: 22px;
+    width: 237px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+}
+
+#section-change-password .container-change-password{
+	background: #FFFFFF;
+	border: 2px solid rgba(63, 64, 66, 0.5);
+	border-radius: 40px;
+	height: 741px;
+	overflow: hidden;
+}
+
+
+
 
 
 
