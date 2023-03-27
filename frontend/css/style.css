@@ -942,6 +942,8 @@ color: #188181;
 	background: #FFFFFF;
 	border: 2px solid rgba(63, 64, 66, 0.5);
 	border-radius: 40px;
+	height: 741px;
+	overflow: hidden;
 }
 
 #section-sign .box-sign{
@@ -1075,6 +1077,10 @@ color: #188181;
 
 #section-forgot-password .box-forgot-password{
 	padding-left: 127px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-right: 213px;
 }
 
 #section-forgot-password .box-forgot-password .title-forgot-password p{
@@ -1085,6 +1091,73 @@ color: #188181;
 #section-forgot-password .box-forgot-password .content-forgot-password p{
 	font-size: 27px;
 	color: #000;
+}
+
+#section-forgot-password .input-forgot-password input{
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+#section-forgot-password .button-forgot-password button{
+	background-color: #188181;
+	color: #fff;
+	font-size: 22px;
+	width: 237px;
+	height: 48px;
+	border: none;
+	border-radius: 10px;
+}
+
+#section-forgot-password .background-right-sign{
+	position: relative;
+	height: 100%;
+}
+
+#section-forgot-password .background-right-sign .background-right-sign-scene{
+	position: absolute;
+    top: -20%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 128%;
+}
+
+#section-forgot-password .background-right-sign .background-right-sign-scene img{
+	width: 800px;
+    height: 1000px;
+}
+
+
+#section-forgot-password .background-right-sign .background-right-sign-circle img{
+	width: 100%;
+}
+
+#section-forgot-password .row.row-forgot-password {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 40px;
+}
+
+#section-forgot-password .background-right-sign-circle {
+	height: 1421px;
+	width: 1421px;
+	background-color: #8BBEB5;
+	border-radius: 50%;
+	position: absolute;
+	right: -150%;
+	top: -50%;
+}
+
+/* xác nhận tài khoản */
+#section-verify-account .title-verify-account p{
+	font-size: 36px;
+}
+
+#section-verify-account .content-verify-account p{
+	font-size:28px;
 }
 
 
