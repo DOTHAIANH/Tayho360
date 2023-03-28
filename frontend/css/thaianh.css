@@ -170,12 +170,15 @@ table {
     position: absolute;
     bottom: 60px;
     z-index: 10;
-    font-size: 30px;
     background: #558F7C;
+    /* bottom: -800px; */
+    z-index: 10;
+    font-size: 24px;
     color: #ffffff;
     border: none;
-    padding: 30px 40px;
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
 #event-home .box-event-home .in-box-event-home .slick-prev {
@@ -1201,7 +1204,7 @@ table {
 
 .btn-show {
     z-index: 999;
-    left: 0;
+    left: 155px;
     width: 5%;
     top: 225px;
 }

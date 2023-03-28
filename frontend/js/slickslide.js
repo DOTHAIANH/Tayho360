@@ -95,36 +95,35 @@ $(document).ready(function () {
     
 });
 
-// $(document).ready(function () {
+$(document).ready(function () {
+  // var boxWidth = $("check-box-map").width();
 
-//   $(".btn-sh-absolute").hide();
+  $(".show_pop-up").hide();
 
-//   $(".check-box-map").show();
-//   $(".show_hide").show();
+  $(".check-box-map").show();
+  $(".hide_pop-up").show();
 
-//   $('.show_hide').click(function () {
-//       $(".check-box-map").toggle("slide");
-//       $(".btn-sh-absolute").show();
-//   });
-
-//   $(".btn-sh-absolute").click(function (){
-//     $(".btn-sh-absolute").hide();
-//   })
-
-// });
-
-$(document).ready(function(){
-  var boxWidth = $(".check-box-map").width();
-  $(".btn-hide").click(function(){
-      $(".box").animate({
-          width: 0
-      });
+  $('.hide_pop-up').click(function () {
+      // $(".check-box-map").toggle("slide");
+      $(".check-box-map").animate({
+        width: 0
+      })
+      $(".check-box-map form label").hide();
+      $(".show_pop-up").show();
+      $(".hide_pop-up").hide();
   });
-  $(".btn-show").click(function(){
-      $(".box").animate({
-          width: boxWidth
-      });
-  });
+
+  $(".show_pop-up").click(function (){
+    // $(".check-box-map").toggle("slide");
+    $(".check-box-map").animate({
+      width: 400
+    })
+    $(".check-box-map form label").show();
+    $(".hide_pop-up").show();
+    $(".show_pop-up").hide();
+  })
+
 });
+
 
 
