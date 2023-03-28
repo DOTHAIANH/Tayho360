@@ -1136,6 +1136,7 @@ table {
 }
 
 #map-home .check-box-map {
+    transition: .5s;
     background-color: #6FABA1;
     top: 0;
     z-index: 999;
@@ -1146,6 +1147,18 @@ table {
     border-radius: 20px;
     /* overflow: hidden; */
     float: left;
+}
+.width-no{
+    width: 0%!important;
+}
+
+#map-home .check-box-map form{
+    transition: .5s;
+    width: 400px;
+    opacity: 1;
+}
+.hide{
+    opacity: 0!important;
 }
 
 #map-home .check-box-map label {

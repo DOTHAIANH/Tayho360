@@ -105,20 +105,30 @@ $(document).ready(function () {
 
   $('.hide_pop-up').click(function () {
       // $(".check-box-map").toggle("slide");
-      $(".check-box-map").animate({
-        width: 0
-      })
-      $(".check-box-map form label").hide();
+      // $(".check-box-map").animate({
+      //   width: 0
+      // })
+      $(".check-box-map").addClass("width-no");
+      $(".check-box-map form").addClass("hide");
+
+      // $(".check-box-map form label").hide();
+
       $(".show_pop-up").show();
       $(".hide_pop-up").hide();
   });
 
   $(".show_pop-up").click(function (){
     // $(".check-box-map").toggle("slide");
-    $(".check-box-map").animate({
-      width: 400
-    })
-    $(".check-box-map form label").show();
+    // $(".check-box-map").animate({
+    //   width: 400
+    // })
+
+    $(".check-box-map").removeClass("width-no")
+
+    $(".check-box-map form").removeClass("hide");
+
+    // $(".check-box-map form label").show();
+    
     $(".hide_pop-up").show();
     $(".show_pop-up").hide();
   })
