@@ -39,7 +39,32 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidetsToScroll: 1,
         prevArrow:`<button type='button' class='slick-prev pull-left'><i class="fa-solid fa-angle-left"></i></button>`,
-        nextArrow:`<button type='button' class='slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`
+        nextArrow:`<button type='button' class='slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            },
+      
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+      
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+          ]
     });
 
 });
@@ -68,6 +93,38 @@ $(document).ready(function () {
         nextArrow:`<button type='button' class='slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`
     });
     
+});
+
+// $(document).ready(function () {
+
+//   $(".btn-sh-absolute").hide();
+
+//   $(".check-box-map").show();
+//   $(".show_hide").show();
+
+//   $('.show_hide').click(function () {
+//       $(".check-box-map").toggle("slide");
+//       $(".btn-sh-absolute").show();
+//   });
+
+//   $(".btn-sh-absolute").click(function (){
+//     $(".btn-sh-absolute").hide();
+//   })
+
+// });
+
+$(document).ready(function(){
+  var boxWidth = $(".check-box-map").width();
+  $(".btn-hide").click(function(){
+      $(".box").animate({
+          width: 0
+      });
+  });
+  $(".btn-show").click(function(){
+      $(".box").animate({
+          width: boxWidth
+      });
+  });
 });
 
 
