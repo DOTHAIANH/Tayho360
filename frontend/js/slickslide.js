@@ -39,7 +39,32 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidetsToScroll: 1,
         prevArrow:`<button type='button' class='slick-prev pull-left'><i class="fa-solid fa-angle-left"></i></button>`,
-        nextArrow:`<button type='button' class='slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`
+        nextArrow:`<button type='button' class='slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            },
+      
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+      
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+          ]
     });
 
 });
@@ -69,5 +94,46 @@ $(document).ready(function () {
     });
     
 });
+
+$(document).ready(function () {
+  // var boxWidth = $("check-box-map").width();
+
+  $(".show_pop-up").hide();
+
+  $(".check-box-map").show();
+  $(".hide_pop-up").show();
+
+  $('.hide_pop-up').click(function () {
+      // $(".check-box-map").toggle("slide");
+      // $(".check-box-map").animate({
+      //   width: 0
+      // })
+      $(".check-box-map").addClass("width-no");
+      $(".check-box-map form").addClass("hide");
+
+      // $(".check-box-map form label").hide();
+
+      $(".show_pop-up").show();
+      $(".hide_pop-up").hide();
+  });
+
+  $(".show_pop-up").click(function (){
+    // $(".check-box-map").toggle("slide");
+    // $(".check-box-map").animate({
+    //   width: 400
+    // })
+
+    $(".check-box-map").removeClass("width-no")
+
+    $(".check-box-map form").removeClass("hide");
+
+    // $(".check-box-map form label").show();
+    
+    $(".hide_pop-up").show();
+    $(".show_pop-up").hide();
+  })
+
+});
+
 
 
