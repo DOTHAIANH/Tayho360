@@ -70,6 +70,15 @@ table {
 
 /* arrow */
 
+/* các title */
+.title-h2 h2{
+	color: #3F4042;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* kết thúc các title */
+
 #place-detail .place-img-slide{
 	padding-left: 110px;
 }
@@ -615,8 +624,31 @@ color: #188181;
 }
 
 
+/* khách sạn chi tiết */
+.convenient-item{
+	display: flex;
+	margin-bottom: 17px;
+}
 
-/* category detail */
+.convenient-item .convenient-icon{
+	width: 34px;
+	margin-right:26px ;
+	
+}
+
+.convenient-item .convenient-icon img{
+	width: 100%;
+	height: auto;
+}
+
+.convenient-item .convenient-item p{
+	font-size: 18px;
+}
+
+
+
+
+/* chuyên mục địa điểm */
 .mgt-340{
 	margin-top: 340px;
 }
@@ -1262,7 +1294,7 @@ color: #188181;
     height: auto;
     border-radius: 50%;
     overflow: hidden;
-    width: 128%;
+    width: 221%;
 }
 
 #section-change-password .background-right-sign .background-right-sign-scene img{
@@ -1283,13 +1315,13 @@ color: #188181;
 }
 
 #section-change-password .background-right-sign-circle {
-	height: 1421px;
-	width: 1421px;
-	background-color: #8BBEB5;
-	border-radius: 50%;
-	position: absolute;
-	right: -150%;
-	top: -50%;
+	height: 1269px;
+    width: 1445px;
+    background-color: #8BBEB5;
+    border-radius: 50%;
+    position: absolute;
+    right: -150%;
+    top: -38%;
 }
 
 #section-change-password .button-verify-account button{
@@ -1394,6 +1426,20 @@ color: #188181;
 	#place-around-section .place-around-slide .slick-next{
 
 	}
+
+	/* thay doi mat khau */
+	#section-change-password .background-right-sign-circle {
+		height: 1269px;
+		width: 1142px;
+	}
+
+	#section-change-password .background-right-sign .background-right-sign-scene {
+		width: 289%;
+	}
+
+	#section-change-password .box-change-password {
+		padding-right: 148px;
+	}
 }
 
 
@@ -1444,11 +1490,29 @@ color: #188181;
 		color: #3F4042;
 	}
 
+	/* tài khoản thay đổi mật khẩu */
+	#section-change-password .background-right-sign{
+		display: none;
+	}
+
+	#section-change-password .box-change-password{
+		width: 100%;
+	}
+
+	#section-change-password .box-change-password {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 
 
 }
 
 @media (max-width: 576px){
+	/* chung */
+	.container{
+		max-width: 95%;
+	}
+
 	#place-detail .place-img-slide{
 		padding-left: 0;
 	}
@@ -1481,6 +1545,11 @@ color: #188181;
 	}
 
 	/* binh luan */
+	#place-comment .point-progress {
+		height: 30px;
+	}
+
+
 	#place-comment .box-point-right .point-right-number p{
 		font-size: 80px;
 
@@ -1490,11 +1559,42 @@ color: #188181;
 		font-size: 40px;
 	}
 
+	#place-comment .box-point-right .point-right-number p {
+		font-size: 47px;
+	}
+
+	#place-comment .box-point-right .point-right-post p {
+		font-size: 29px;
+	}
+
+	#place-comment .box-write-comment .write-comment .button-write-comment {
+		height: 57px;
+	}
+	#place-comment .box-write-comment .write-comment .button-write-comment .button-icon-comment svg {
+		font-size: 31px;
+	}
+
+	#place-comment .box-write-comment .write-comment .button-write-comment .button-text-comment{
+		font-size: 24px;
+	}
+
+	#place-comment .form-comment .send-comment{
+		width: 70%;
+	}
+
 	
 }
 
 
 @media (max-width: 576px){
+	/* chung */
+	.banner-img{
+		height: 427px;
+	}
+
+	.iframe-banner{
+		height: 427px;
+	}
 	/* chuyên mục địa điểm */
 	.filter-option-title{
 		display: none !important;
@@ -1509,9 +1609,18 @@ color: #188181;
 	#section-background-index .container-box-filter-search .form-select-filter{
 		width: 100%;
 		margin: 0;
+		height: 63px;
 	}
 
 	#section-background-index .form-select-filter{
 		border-radius: 0;
 	}
+
+	.container-box-filter-search .input-search{
+		margin-left: 37px;
+    	margin-right: 37px;
+	}
+
+	/* chi tiết địa điểm */
+
 }
