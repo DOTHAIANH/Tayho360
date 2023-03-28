@@ -642,7 +642,7 @@ color: #188181;
 #place-category .place-category-item{
 	padding: 0 22px;
 	margin: 25px 0;
-	width: 29%;
+	/* width: 29%; */
 }
 
 #place-category .place-category-item-img{
@@ -689,10 +689,8 @@ color: #188181;
 
 #section-background-index .filter-option{
 	width: 80%;
-	margin:auto;
-	padding-left:62px;
 	padding-right: 42px;
-	
+	/* margin-right: 86px ; */
 	
 }
 
@@ -712,8 +710,7 @@ color: #188181;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 	transform: translateY(-100px);
 	padding: 0 ;
-	position: absolute;
-	right: 8%;
+
 	
 }
 
@@ -721,10 +718,18 @@ color: #188181;
 	height: 80px;
 	padding-right: 106px;
 	text-align: right;
+	margin: 50px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url(../img/Group\ 485.png) ;
+	background-size: cover;
+	background-position: right;
+	width: 92%;
 }
 
 #section-background-index .filter-option-title {
-	/* width: 20%; */
+	width: 20%;
 	border-right: 2px solid rgba(0, 0, 0, 0.2);
 	display: flex;
     align-items: center;
@@ -777,8 +782,12 @@ color: #188181;
 	
 }
 
+#section-background-index .form-select-filter:focus-visible{
+	outline: none;
+}
+
 .container-box-filter-search .input-search{
-	background: rgba(59, 146, 129, 0.17);
+	background: #C5DED8;
 	display: flex;
 	width: 100%;
 	border-radius: 20px;
@@ -1301,57 +1310,50 @@ color: #188181;
 	overflow: hidden;
 }
 
+#section-change-password .button-change-password button{
+	background-color: #188181;
+    color: #fff;
+    font-size: 22px;
+    width: 237px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+}
 
 
 
+#section-change-password .box-change-password{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-right: 213px;
+	padding-left: 127px;
+}
+
+#section-change-password .title-change-password p{
+	font-size: 36px
+}
+
+#section-change-password .content-change-password p{
+	font-size: 28px;
+}
+
+#section-change-password .input-change-password .icon-eye-button img{
+	margin: auto;
+	width: 27px;
+	height: 14px;
+	color: #126B66;
+	cursor: pointer;
+}
 
 
+#section-change-password .input-change-password .icon-eye-button{
+	padding-right: 20px;
+	margin: auto;
+}
 
 /* responsive */
-@media (max-width: 576px){
-	#place-detail .place-img-slide{
-		padding-left: 0;
-	}
 
-	#place-detail .place-content {
-		margin-bottom: 40px;
-	}
-
-	#place-detail .button-content button{
-		width: 144px;
-    	height: 45px;
-		font-size: 18px;
-	}
-
-	#place-information .icon-information p{
-		font-size: 23px;
-		margin-bottom: 15px;
-	}
-
-	#place-information .icon-information{
-		display: block;
-	}
-
-	.map-iframe iframe {
-		height: 503px;
-	}
-
-	#place-post-comment .post-comment-content{
-		flex-direction: column;
-	}
-
-	/* binh luan */
-	#place-comment .box-point-right .point-right-number p{
-		font-size: 80px;
-
-	}
-
-	#place-comment .point-right-star i{
-		font-size: 40px;
-	}
-
-	
-}
 
 
 @media (max-width:1025px){
@@ -1444,4 +1446,72 @@ color: #188181;
 
 
 
+}
+
+@media (max-width: 576px){
+	#place-detail .place-img-slide{
+		padding-left: 0;
+	}
+
+	#place-detail .place-content {
+		margin-bottom: 40px;
+	}
+
+	#place-detail .button-content button{
+		width: 144px;
+    	height: 45px;
+		font-size: 18px;
+	}
+
+	#place-information .icon-information p{
+		font-size: 23px;
+		margin-bottom: 15px;
+	}
+
+	#place-information .icon-information{
+		display: block;
+	}
+
+	.map-iframe iframe {
+		height: 503px;
+	}
+
+	#place-post-comment .post-comment-content{
+		flex-direction: column;
+	}
+
+	/* binh luan */
+	#place-comment .box-point-right .point-right-number p{
+		font-size: 80px;
+
+	}
+
+	#place-comment .point-right-star i{
+		font-size: 40px;
+	}
+
+	
+}
+
+
+@media (max-width: 576px){
+	/* chuyên mục địa điểm */
+	.filter-option-title{
+		display: none !important;
+	}
+
+	#section-background-index .filter-option{
+		width: 100%;
+		padding: 0;
+		border-radius: 0;
+	}
+
+	#section-background-index .container-box-filter-search .form-select-filter{
+		width: 100%;
+		margin: 0;
+	}
+
+	#section-background-index .form-select-filter{
+		border-radius: 0;
+	}
 }
