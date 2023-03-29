@@ -1153,11 +1153,12 @@ table {
 }
 
 #map-home .check-box-map form{
-    transition: .5s;
+    transition: 2s;
     width: 400px;
     opacity: 1;
 }
 .hide{
+    transition: 0.1s !important;
     opacity: 0!important;
 }
 
@@ -1197,7 +1198,7 @@ table {
 
 #map-home #mapid .book-icon-map {
     z-index: 1000;
-    left: -17px;
+    left: 62px;
     top: 35px;
 }
 
@@ -1213,14 +1214,23 @@ table {
 .btn-hide {
     right: -25px;
     top: 225px;
+    opacity: 1;
+    transition: .5s;
+}
+
+.btn-hide.to-left{
+    right: 280px;
+    /* opacity: 0; */
 }
 
 .btn-show {
+    transition: .5s;
     z-index: 999;
     left: 155px;
     width: 5%;
     top: 225px;
 }
+
 
 .btn-show a {
     background-color: #558F7C;
@@ -1228,6 +1238,11 @@ table {
     padding: 15px 23px;
     border-radius: 50%;
     font-size: 18px;
+    transition: .5s;
+    opacity: 1;
+}
+.opacity-0{
+    opacity: 0!important;
 }
 
 
