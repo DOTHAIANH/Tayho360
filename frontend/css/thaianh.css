@@ -369,6 +369,13 @@ table {
 	margin: 2px auto 55px auto;
 }
 
+#travel-guide .box-service .box-image img {
+    width: 100%;
+    height: 219px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
 .box-service {
     transition: .5s linear all;
     position: relative;
@@ -376,12 +383,12 @@ table {
 	border-radius: 20px;
 }
 
-.content-service .box-service .box-image img {
+/* .content-service .box-service .box-image img {
     width: 100%;
     height: 388px;
     object-fit: cover;
 	border-radius: 20px;
-}
+} */
 
 .box-service .over_black, .box-service .title-service-details {
     opacity: 1;
@@ -390,14 +397,14 @@ table {
 
 .over_black {
     position: absolute;
-    height: 117px;
+    height: 70px;
     background-image: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
     bottom: 0px;
     transition: 0.2s;
     border-radius: 5px;
     z-index: 0;
-	border-radius: 20px;
+    border-radius: 20px;
 }
 
 .box-service .over_black, .box-service .title-service-details {
@@ -442,7 +449,7 @@ table {
     left: 0;
     height: 0%;
     transition: 1s;
-    border-radius: 15px;
+    border-radius: 11px;
     background-image: linear-gradient(to bottom, rgba(131, 198, 187, 1) 0%, rgba(131, 198, 187, 1) 23%, rgba(131, 198, 187, 1) 99%, rgba(131, 198, 187, 1) 100%);
     opacity: 0;
     z-index: 0;
@@ -460,7 +467,6 @@ table {
 
 .overplay_text h4 {
     color: #ffffff;
-    font-family: "Montserrat-Bold";
     font-size: 20px;
     font-weight: 700;
     font-style: normal;
@@ -469,35 +475,40 @@ table {
     text-transform: uppercase;
     position: relative;
     margin-bottom: 50px;
+    margin-top: 10px;
 }
 
-.overplay_text .btn_trang {
+/* .overplay_text .btn_trang {
     transform: translateX(50%);
-}
+} */
 
 .btn_trang {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 167px;
-    height: 46px;
-    border-radius: 23px 0;
+    width: 155px;
+    height: 40px;
+    border-radius: 12px 12px;
     border: 1px solid #ffffff;
-    margin-top: 40px;
+    margin-top: 15px;
     transition: all 0.2s ease-in-out;
-    z-index: 3;
+    z-index: 10;
     text-align: center;
+    left: 31%;
+    width: 40%;
+    margin: auto;
+    top: 50%;
 }
 
 .btn_trang a {
     color: #ffffff;
-    z-index: 9;
+    text-decoration: none;
 }
 
 .box-service:hover .overplay_content {
-    bottom: 3px;
-    opacity: 0.8;
-    height: 293px;
+    bottom: 2px;
+    opacity: 0.9;
+    height: 219px;
 }
 
 .box-service:hover .over_black, .box-service:hover .title-service-details {
@@ -647,21 +658,21 @@ table {
 }
 
 #tour-travel-home .box-slide-tth .box-tth .box-info .type-tour {
-    font-size: 19px;
+    font-size: 16px;
     line-height: normal;
     font-weight: 400;
     margin-bottom: 12px;
 }
 
 #tour-travel-home .box-slide-tth .box-tth .box-info .title-tour {
-    font-size: 28px;
+    font-size: 22px;
     line-height: normal;
     font-weight: 400;
     margin-bottom: 12px;
 }
 
 #tour-travel-home .box-slide-tth .box-tth .box-info .price-tour {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 /* #map-home */
@@ -1226,7 +1237,7 @@ table {
 .btn-show {
     transition: .5s;
     z-index: 999;
-    left: 155px;
+    left: 150px;
     width: 5%;
     top: 225px;
 }
