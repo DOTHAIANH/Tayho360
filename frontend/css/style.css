@@ -264,12 +264,14 @@ table {
 	color: #3F4042;
 	font-size: 22px;
 	border-radius:10px ;
+	transition: .5s;
 }
 
 .button-content i{
 	color: #126B66;
 	margin-right: 12px;
 	font-size: 18px;
+	transition: .5s;
 }
 
 #place-information .title-information{
@@ -587,6 +589,10 @@ color: #188181;
 	font-size: 20px;
 }
 
+#place-post-comment .post-comment-content-text .more{
+	color: #3F4042;
+}
+
 #place-post-comment .information-people-img img{
 	width: 68px;
 	height: 68px;
@@ -643,6 +649,7 @@ color: #188181;
 
 .convenient-item .convenient-item p{
 	font-size: 18px;
+	line-height: 41px;
 }
 
 
@@ -1383,6 +1390,8 @@ color: #188181;
 	padding-right: 20px;
 	margin: auto;
 }
+
+
 
 /* responsive */
 

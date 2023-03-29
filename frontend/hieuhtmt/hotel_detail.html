@@ -210,7 +210,6 @@
         </div>
     </section>
     
-
     <!-- Bản đồ -->
     <section id="map-section" class="mgt-80">
         <div class="container">
@@ -223,6 +222,160 @@
             </div>
         </div>
     </section>
+
+    <!-- Danh sách phòng -->
+    <section class="danh-sach-phong">
+        <div class="container">
+            <div class="head-line">
+                <h3>Danh sách phòng</h3>
+            </div>
+            <div class="body">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="danh-sach-phong-item">
+                            <div class="card">
+                                <div class="card-body px-lg-5">
+                                    <div class="row g-3">
+                                        <div class="col-12 col-lg-3">
+                                            <img src="../assets/lou_img/room.png" class="w-100 room-img" alt="">
+                                        </div>
+                                        <div class="col-12 col-lg-6 border-right-line">
+                                            <div class="room-detail">
+                                                <h6>Phòng 2 giường đơn</h6>
+                                                <div class="row g-2">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="roon-service">
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="me-2" src="../assets/lou_icon/icon-bed.svg"
+                                                                    alt="">
+                                                                <span>2 giường đơn</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="roon-service">
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="me-2"
+                                                                    src="../assets/lou_icon/icon-dien-tich.svg" alt="">
+                                                                <span>40m2</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="roon-service">
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="me-2"
+                                                                    src="../assets/lou_icon/icon-person.svg" alt="">
+                                                                <span>Tối đa 3 người</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="roon-service">
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="me-2"
+                                                                    src="../assets/lou_icon/icon-eye-room.svg" alt="">
+                                                                <span>Hướng Nam, view Hồ Tây</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <div class="room-price h-100">
+                                                <div class="d-flex flex-column justify-content-end align-items-end">
+                                                    <span class="badge badge-discount">-25%</span>
+                                                    <div class="mt-3">
+                                                        <del>1.411.574 đ</del>
+                                                    </div>
+                                                    <div class="price mb-3">
+                                                        1.084.100 đ
+                                                    </div>
+                                                    <div class="button">
+                                                        <a href="" class="btn button-submit-custom"
+                                                            data-bs-toggle="modal" data-bs-target="#modal-book-room">Đặt
+                                                            phòng</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-book-room" tabindex="-1" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="text-center modal-name">Đặt phòng</h5>
+                    <form action="" class="form-custom-1 py-3">
+                        <div class="card-body p-lg-5">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="d-flex form-group-flex">
+                                        <label for="">Họ và tên</label>
+                                        <input type="text" class="form-control" placeholder="Nguyen Van A" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex form-group-flex">
+                                        <label for="">SĐT</label>
+                                        <input type="text" class="form-control" placeholder="0565651189" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex form-group-flex">
+                                        <label for="">Ghi chú</label>
+                                        <textarea class="form-control" id="" rows="3" style="height: 170px;"
+                                            placeholder="Nội dung"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex form-group-flex">
+                                        <label for="">Check in</label>
+                                        <div class="d-flex date-time-input justify-content-between">
+                                            <input type="time" class="time-input">
+                                            <input type="date" class="date-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex form-group-flex">
+                                        <label for="">Check out</label>
+                                        <div class="d-flex date-time-input justify-content-between">
+                                            <input type="time" class="time-input">
+                                            <input type="date" class="date-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex form-group-flex">
+                                        <label for="">Số lượng</label>
+                                        <div class="d-flex range-number justify-content-between">
+                                            <button class="minus-btn"><img src="../assets/lou_icon/icon-minus.svg" alt=""></button>
+                                            <input class="form-control" type="number" value="1">
+                                            <button class="plus-btn"><img src="../assets/lou_icon/icon-plus.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Địa điểm xung quanh -->
     <section id="place-around-section" class="mgt-80">
         <div class="container">
@@ -298,7 +451,6 @@
                     <div class="place-around-img">
                         <a href=""><img src="../img/chua-ba-gia-1-1536x1051-0304.png" alt=""></a>
                     </div>
-
                     
                     <div class="place-around-title">
                         <a href="">Làng cổ Nghi Tầm</a>
@@ -308,7 +460,6 @@
                         <div class="place-around-address">
                             <p>Phường Quảng An, Tây Hồ</p>
                         </div>
-    
                         <div class="place-around-size">
                             <p>12 km</p>
                         </div>
@@ -460,7 +611,7 @@
                     </div>
 
                     <div class="post-comment-content-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... Thêm
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
                     </div>
                 </div>
 
@@ -492,7 +643,7 @@
                     </div>
 
                     <div class="post-comment-content-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... Thêm
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
                     </div>
                 </div>
 
@@ -524,7 +675,7 @@
                     </div>
 
                     <div class="post-comment-content-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... Thêm
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
                     </div>
                 </div>
             </div>
