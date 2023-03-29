@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit thông tin cá nhân</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="top bg-primary-cus py-2">
+            <div class="container">
+                <div class="d-flex justify-content-end align-items-center">
+                    <form class="search-input d-none d-md-block">
+                        <img src="../assets/lou_icon/icon-search.svg" class="me-2" alt="">
+                        <input type="text" placeholder="Tìm kiếm">
+                    </form>
+                    <li class="nav-item dropdown user-login">
+                        <a class="nav-link dropdown-toggle align-items-center" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            <img src="../assets/lou_icon/user-icon.png" alt="">
+                            <span class="username">Xin chào, Nguyễn Văn A</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Hành trình</a></li>
+                            <li><a class="dropdown-item" href="#">Đặt phòng</a></li>
+                            <li><a class="dropdown-item" href="#">Yêu thích</a></li>
+                            <li><a class="dropdown-item" href="#">Thông báo</a></li>
+                            <li><a class="dropdown-item" href="#">Tài khoản</a></li>
+                            <li><a class="dropdown-item logout" href="#">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                    <!-- <a href="" class="sign btn">Đăng ký / Đăng nhập</a> -->
+                    <a href="" class="lang d-block">
+                        <img src="../assets/lou_icon/lang-vn.svg" alt="">
+                    </a>
+                    <a href="" class="lang d-block">
+                        <img src="../assets/lou_icon/lang-en.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-nav">
+            <div class="container-xxl">
+                <nav class="navbar navbar-expand-xxl">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-block" href="#">
+                            <img src="../assets/lou_icon/logo-header.svg" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        ĐIỂM ĐẾN
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Di tích văn hóa</a></li>
+                                        <li><a class="dropdown-item" href="#">Danh lam</a></li>
+                                        <li><a class="dropdown-item" href="#">Làng nghề</a></li>
+                                        <li><a class="dropdown-item" href="#">Lễ hội</a></li>
+                                        <li><a class="dropdown-item" href="#">Trụ sở cơ quan chính</a></li>
+                                        <li><a class="dropdown-item" href="#">Trung tâm hội nghị, sự kiện</a></li>
+                                        <li><a class="dropdown-item" href="#">Khách sạn</a></li>
+                                        <li><a class="dropdown-item" href="#">Nhà hàng quán ăn</a></li>
+                                        <li><a class="dropdown-item" href="#">Dịch vụ hỗ trợ du lịch</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SỰ KIỆN</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        CẨM NANG DU LỊCH
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Cẩm nang 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Cẩm nang 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Cẩm nang khác</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">TIN TỨC</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">TOUR DU LỊCH</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">BẢN ĐỒ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">VIỆT NAM 360</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner-top-style-1">
+            <img class="w-100" src="../assets/lou_img/banner.png" alt="">
+        </section>
+        <section id="tour-list">
+            <div class="container form-main-position">
+                <div class="form-search-tour">
+                    <form action="">
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <div class="input-form-contain w-100">
+                                <div class="row g-3">
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex form-input">
+                                            <div class="round-icon d-none d-md-block"></div>
+                                            <div class="form-group w-100">
+                                                <label for="">Địa điểm</label>
+                                                <input type="text" class="form-control" placeholder="Địa điểm" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex form-input">
+                                            <div class="round-icon d-none d-md-block"></div>
+                                            <div class="form-group w-100">
+                                                <label for="">Ngày</label>
+                                                <input type="date" class="form-control" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex form-input">
+                                            <div class="round-icon d-none d-md-block"></div>
+                                            <div class="form-group w-100 no-border">
+                                                <label for="">Thời gian</label>
+                                                <input type="time" class="form-control" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-form-contain">
+                                <button class="btn button-submit-custom">
+                                    <img src="../assets/lou_icon/icon-search-white.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="text-center">Tour du lịch</h1>
+                <div class="tour-du-lich-list">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="" class="text-decoration-none">
+                                <div class="tour-du-lich-card">
+                                    <div class="card border-0 w-100">
+                                        <div class="card-top">
+                                            <img src="../assets/lou_img/tour-du-lich-card.png" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-overlay"></div>
+                                            <div class="card-num-day">
+                                                3N<br>2Đ
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-lg-4">
+                                            <h5 class="card-title">Phủ Tây Hồ - Chùa Bà Già</h5>
+                                            <p class="card-time">01/01/2023 - 03/01/2023</p>
+                                            <div class="d-flex align-items-center card-num-location">
+                                                <img class="me-2" src="../assets/lou_icon/icon-location-white-card.svg"
+                                                    alt="">
+                                                <span>2 địa điểm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="" class="text-decoration-none">
+                                <div class="tour-du-lich-card">
+                                    <div class="card border-0 w-100">
+                                        <div class="card-top">
+                                            <img src="../assets/lou_img/tour-du-lich-card.png" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-overlay"></div>
+                                            <div class="card-num-day">
+                                                3N<br>2Đ
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-lg-4">
+                                            <h5 class="card-title">Phủ Tây Hồ - Chùa Bà Già</h5>
+                                            <p class="card-time">01/01/2023 - 03/01/2023</p>
+                                            <div class="d-flex align-items-center card-num-location">
+                                                <img class="me-2" src="../assets/lou_icon/icon-location-white-card.svg"
+                                                    alt="">
+                                                <span>2 địa điểm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="" class="text-decoration-none">
+                                <div class="tour-du-lich-card">
+                                    <div class="card border-0 w-100">
+                                        <div class="card-top">
+                                            <img src="../assets/lou_img/tour-du-lich-card.png" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-overlay"></div>
+                                            <div class="card-num-day">
+                                                3N<br>2Đ
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-lg-4">
+                                            <h5 class="card-title">Phủ Tây Hồ - Chùa Bà Già</h5>
+                                            <p class="card-time">01/01/2023 - 03/01/2023</p>
+                                            <div class="d-flex align-items-center card-num-location">
+                                                <img class="me-2" src="../assets/lou_icon/icon-location-white-card.svg"
+                                                    alt="">
+                                                <span>2 địa điểm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="" class="text-decoration-none">
+                                <div class="tour-du-lich-card">
+                                    <div class="card border-0 w-100">
+                                        <div class="card-top">
+                                            <img src="../assets/lou_img/tour-du-lich-card.png" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-overlay"></div>
+                                            <div class="card-num-day">
+                                                3N<br>2Đ
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-lg-4">
+                                            <h5 class="card-title">Phủ Tây Hồ - Chùa Bà Già</h5>
+                                            <p class="card-time">01/01/2023 - 03/01/2023</p>
+                                            <div class="d-flex align-items-center card-num-location">
+                                                <img class="me-2" src="../assets/lou_icon/icon-location-white-card.svg"
+                                                    alt="">
+                                                <span>2 địa điểm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="" class="text-decoration-none">
+                                <div class="tour-du-lich-card">
+                                    <div class="card border-0 w-100">
+                                        <div class="card-top">
+                                            <img src="../assets/lou_img/tour-du-lich-card.png" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-overlay"></div>
+                                            <div class="card-num-day">
+                                                3N<br>2Đ
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-lg-4">
+                                            <h5 class="card-title">Phủ Tây Hồ - Chùa Bà Già</h5>
+                                            <p class="card-time">01/01/2023 - 03/01/2023</p>
+                                            <div class="d-flex align-items-center card-num-location">
+                                                <img class="me-2" src="../assets/lou_icon/icon-location-white-card.svg"
+                                                    alt="">
+                                                <span>2 địa điểm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="" class="text-decoration-none">
+                                <div class="tour-du-lich-card">
+                                    <div class="card border-0 w-100">
+                                        <div class="card-top">
+                                            <img src="../assets/lou_img/tour-du-lich-card.png" class="card-img-top"
+                                                alt="...">
+                                            <div class="card-overlay"></div>
+                                            <div class="card-num-day">
+                                                3N<br>2Đ
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-lg-4">
+                                            <h5 class="card-title">Phủ Tây Hồ - Chùa Bà Già</h5>
+                                            <p class="card-time">01/01/2023 - 03/01/2023</p>
+                                            <div class="d-flex align-items-center card-num-location">
+                                                <img class="me-2" src="../assets/lou_icon/icon-location-white-card.svg"
+                                                    alt="">
+                                                <span>2 địa điểm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <nav class="paginate-custom" aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <img src="../assets/lou_icon/paginate-left.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <img src="../assets/lou_icon/paginate-right.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="main-footer px-0 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <div class="logo-footer mb-4">
+                            <img class="w-100" src="../assets/lou_icon/logo-footer.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-8">
+                        <div class="list-info">
+                            <h5>TRANG THÔNG TIN ĐIỆN TỬ TÂY HỒ 360</h5>
+                            <div class="list-info">
+                                <ul class="p-0 list-unstyled">
+                                    <li>Cơ quan chủ quản: Ủy ban nhân dân quận Tây Hồ – TP. Hà Nội</li>
+                                    <li>Địa chỉ: 657 Đ. Lạc Long Quân, Tây Hồ, Hà Nội</li>
+                                    <li>Điện thoại: 024 7533396</li>
+                                    <li>Email: tayho360@gmail.com</li>
+                                    <li class="mt-3">Chịu trách nhiệm chính: Phòng Văn hóa và Thông tin quận Tây Hồ</li>
+                                    <li>Điện thoại: 0247533396</li>
+                                    <li>Hòm thư công vụ:  vanthu_tayho@hanoi.gov.vn</li>
+                                    <li class="mt-3">Theo dõi chúng tôi qua:</li>
+                                    <ul class="list-unstyled p-0">
+                                    </ul>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-2">
+                        <div class="list-info thong-tin-chung">
+                            <h5>Thông tin chung</h5>
+                            <div class="list-info">
+                                <ul class="p-0 list-unstyled">
+                                    <li><a href="">Điểm đến</a></li>
+                                    <li><a href="">Sự kiện</a></li>
+                                    <li><a href="">Cẩm nang du lịch</a></li>
+                                    <li><a href="">Tin tức</a></li>
+                                    <li><a href="">Tour du lịch</a></li>
+                                    <li><a href="">Bản đồ du lịch</a></li>
+                                    <li><a href="">Việt Nam 360</a></li>
+                                    <li class="mt-3"><a href="">Tải phiên bản dành cho di động</a></li>
+                                    <ul class="list-unstyled p-0">
+                                    </ul>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="d-flex justify-content-between flex-column flex-md-row">
+                    <span>Copyright Tay Ho 360 © 2020. Developed & Managed by VinGG</span>
+                    <span>Lượt truy cập: 1.000.000</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

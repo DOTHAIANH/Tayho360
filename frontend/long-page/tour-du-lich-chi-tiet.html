@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit thông tin cá nhân</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="top bg-primary-cus py-2">
+            <div class="container">
+                <div class="d-flex justify-content-end align-items-center">
+                    <form class="search-input d-none d-md-block">
+                        <img src="../assets/lou_icon/icon-search.svg" class="me-2" alt="">
+                        <input type="text" placeholder="Tìm kiếm">
+                    </form>
+                    <li class="nav-item dropdown user-login">
+                        <a class="nav-link dropdown-toggle align-items-center" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            <img src="../assets/lou_icon/user-icon.png" alt="">
+                            <span class="username">Xin chào, Nguyễn Văn A</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Hành trình</a></li>
+                            <li><a class="dropdown-item" href="#">Đặt phòng</a></li>
+                            <li><a class="dropdown-item" href="#">Yêu thích</a></li>
+                            <li><a class="dropdown-item" href="#">Thông báo</a></li>
+                            <li><a class="dropdown-item" href="#">Tài khoản</a></li>
+                            <li><a class="dropdown-item logout" href="#">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                    <!-- <a href="" class="sign btn">Đăng ký / Đăng nhập</a> -->
+                    <a href="" class="lang d-block">
+                        <img src="../assets/lou_icon/lang-vn.svg" alt="">
+                    </a>
+                    <a href="" class="lang d-block">
+                        <img src="../assets/lou_icon/lang-en.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-nav">
+            <div class="container-xxl">
+                <nav class="navbar navbar-expand-xxl">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-block" href="#">
+                            <img src="../assets/lou_icon/logo-header.svg" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        ĐIỂM ĐẾN
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Di tích văn hóa</a></li>
+                                        <li><a class="dropdown-item" href="#">Danh lam</a></li>
+                                        <li><a class="dropdown-item" href="#">Làng nghề</a></li>
+                                        <li><a class="dropdown-item" href="#">Lễ hội</a></li>
+                                        <li><a class="dropdown-item" href="#">Trụ sở cơ quan chính</a></li>
+                                        <li><a class="dropdown-item" href="#">Trung tâm hội nghị, sự kiện</a></li>
+                                        <li><a class="dropdown-item" href="#">Khách sạn</a></li>
+                                        <li><a class="dropdown-item" href="#">Nhà hàng quán ăn</a></li>
+                                        <li><a class="dropdown-item" href="#">Dịch vụ hỗ trợ du lịch</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SỰ KIỆN</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        CẨM NANG DU LỊCH
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Cẩm nang 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Cẩm nang 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Cẩm nang khác</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">TIN TỨC</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">TOUR DU LỊCH</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">BẢN ĐỒ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">VIỆT NAM 360</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner-top-style-1">
+            <img class="w-100" src="../assets/lou_img/banner.png" alt="">
+        </section>
+        <section>
+            <div class="container py-3 py-md-5">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <section id="tour-chi-tiet-intro" class="mb-4">
+                            <h3 class="header-name">GIỚI THIỆU</h3>
+                            <p class="intro-content">
+                                Lorem ipsum dolor sit amet consectetur. At rhoncus nisl aliquam magna odio varius ipsum
+                                pulvinar posuere. Lectus libero ac non adipiscing massa elementum nunc aenean maecenas.
+                                Scelerisque sit vel lacus fringilla et at. Nibh in enim at scelerisque in. Duis amet
+                                tristique risus aliquam convallis egestas. Mauris habitasse augue neque ultrices.
+                                Vestibulum a feugiat tellus amet pharetra neque viverra. Sit gravida cras condimentum
+                                blandit vitae eget sit. Libero risus dui feugiat neque....
+                            </p>
+                        </section>
+                        <section class="time-line">
+                            <div class="">
+                                <h3 class="header-name">TIME LINE</h3>
+                                <div class="main-menu">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                                data-bs-target="#home-tab-pane" type="button" role="tab"
+                                                aria-controls="home-tab-pane" aria-selected="true">Ngày 1</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                                aria-controls="profile-tab-pane" aria-selected="false">Ngày 2</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt-5" id="myTabContent">
+                                        <div class="tab-timeline tab-pane fade show active" id="home-tab-pane"
+                                            role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                            <div class="row g-3 g-lg-0">
+                                                <div class="col-12 img-left">
+                                                    <div class="d-flex align-items-lg-start">
+                                                        <img class="img-detail mb-3" src="../assets/lou_img/tour-img.png"
+                                                            alt="">
+                                                        <div class="line-break d-none d-xxl-block px-3">
+                                                            <div
+                                                                class="d-flex flex-column justify-content-center align-items-center">
+                                                                <div class="circle-top">
+                                                                </div>
+                                                                <div class="line"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content px-3">
+                                                            <a href="" class="d-block">
+                                                                <span class="time">07:00</span>
+                                                                <h5>Phủ Tây Hồ</h5>
+                                                                <p class="title">Lorem ipsum dolor sit amet consectetur.
+                                                                    Et
+                                                                    mi aenean
+                                                                    turpis fringilla
+                                                                    bibendum sed morbi imperdiet non.</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 img-right">
+                                                    <div class="d-flex align-items-lg-start">
+                                                        <img class="img-detail mb-3" src="../assets/lou_img/tour-img.png"
+                                                            alt="">
+                                                        <div class="line-break d-none d-xxl-block px-3">
+                                                            <div
+                                                                class="d-flex flex-column justify-content-center align-items-center">
+                                                                <div class="circle-top">
+                                                                </div>
+                                                                <div class="line"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content px-3">
+                                                            <a href="" class="d-block">
+                                                                <span class="time">07:00</span>
+                                                                <h5>Phủ Tây Hồ</h5>
+                                                                <p class="title">Lorem ipsum dolor sit amet consectetur.
+                                                                    Et
+                                                                    mi aenean
+                                                                    turpis fringilla
+                                                                    bibendum sed morbi imperdiet non.</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 img-left">
+                                                    <div class="d-flex align-items-lg-start">
+                                                        <img class="img-detail mb-3" src="../assets/lou_img/tour-img.png"
+                                                            alt="">
+                                                        <div class="line-break d-none d-xxl-block px-3">
+                                                            <div
+                                                                class="d-flex flex-column justify-content-center align-items-center">
+                                                                <div class="circle-top">
+                                                                </div>
+                                                                <div class="line"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content px-3">
+                                                            <a href="" class="d-block">
+                                                                <span class="time">07:00</span>
+                                                                <h5>Phủ Tây Hồ</h5>
+                                                                <p class="title">Lorem ipsum dolor sit amet consectetur.
+                                                                    Et
+                                                                    mi aenean
+                                                                    turpis fringilla
+                                                                    bibendum sed morbi imperdiet non.</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                            aria-labelledby="profile-tab" tabindex="0">Day 2</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <section class="tour-chi-tiet-map">
+                            <div class="map-contain">
+                                <div id="google-map"></div>
+                                <div class="selection"></div>
+                                <div class="current-location"></div>
+                                <div class="zoom"></div>
+                            </div>
+                            <div class="p-3 tour-chi-tiet-body">
+                                <div class="card-detail d-flex align-items-center">
+                                    <img src="../assets/lou_icon/icon-clock-dat-tour.svg" alt="">
+                                    <span>01/01/2023-04/01/2023</span>
+                                </div>
+                                <div class="card-detail d-flex align-items-center">
+                                    <img src="../assets/lou_icon/icon-location-dat-tour.svg" alt="">
+                                    <span>2 địa điểm</span>
+                                </div>
+                                <div class="card-detail d-flex align-items-center">
+                                    <img src="../assets/lou_icon/icon-promote-dat-tour.svg" alt="">
+                                    <span>100.000 VNĐ</span>
+                                </div>
+                                <div class="button-group mt-3">
+                                    <a href="" class="btn button-outline-primary-custom" data-bs-toggle="modal"
+                                    data-bs-target="#modal-book-tour">Đặt tour</a>
+                                    <a href="" class="btn button-outline-primary-custom">
+                                        <div class="d-flex align-items-center">
+                                            <img src="../assets/lou_icon/icon-share.svg" class="me-2" alt="">
+                                            <span>Chia sẻ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="main-footer px-0 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <div class="logo-footer mb-4">
+                            <img class="w-100" src="../assets/lou_icon/logo-footer.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-8">
+                        <div class="list-info">
+                            <h5>TRANG THÔNG TIN ĐIỆN TỬ TÂY HỒ 360</h5>
+                            <div class="list-info">
+                                <ul class="p-0 list-unstyled">
+                                    <li>Cơ quan chủ quản: Ủy ban nhân dân quận Tây Hồ – TP. Hà Nội</li>
+                                    <li>Địa chỉ: 657 Đ. Lạc Long Quân, Tây Hồ, Hà Nội</li>
+                                    <li>Điện thoại: 024 7533396</li>
+                                    <li>Email: tayho360@gmail.com</li>
+                                    <li class="mt-3">Chịu trách nhiệm chính: Phòng Văn hóa và Thông tin quận Tây Hồ</li>
+                                    <li>Điện thoại: 0247533396</li>
+                                    <li>Hòm thư công vụ:  vanthu_tayho@hanoi.gov.vn</li>
+                                    <li class="mt-3">Theo dõi chúng tôi qua:</li>
+                                    <ul class="list-unstyled p-0">
+                                    </ul>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-2">
+                        <div class="list-info thong-tin-chung">
+                            <h5>Thông tin chung</h5>
+                            <div class="list-info">
+                                <ul class="p-0 list-unstyled">
+                                    <li><a href="">Điểm đến</a></li>
+                                    <li><a href="">Sự kiện</a></li>
+                                    <li><a href="">Cẩm nang du lịch</a></li>
+                                    <li><a href="">Tin tức</a></li>
+                                    <li><a href="">Tour du lịch</a></li>
+                                    <li><a href="">Bản đồ du lịch</a></li>
+                                    <li><a href="">Việt Nam 360</a></li>
+                                    <li class="mt-3"><a href="">Tải phiên bản dành cho di động</a></li>
+                                    <ul class="list-unstyled p-0">
+                                    </ul>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="d-flex justify-content-between flex-column flex-md-row">
+                    <span>Copyright Tay Ho 360 © 2020. Developed & Managed by VinGG</span>
+                    <span>Lượt truy cập: 1.000.000</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-book-tour" tabindex="-1" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body p-lg-5">
+                    <h5 class="text-center modal-name">Thông tin</h5>
+                    <form action="" class="form-custom-1 py-3">
+                        <div class="card-body p-lg-5">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="">Họ và tên</label>
+                                    <input type="text" class="form-control" placeholder="Nhập tên đăng nhập"
+                                        required="">
+                                </div>
+                                <div class="col-12">
+                                    <label for="">Số điện thoại</label>
+                                    <input type="text" class="form-control" placeholder="Nhập số điện thoại"
+                                        required="">
+                                </div>
+                                <div class="col-12">
+                                    <label for="">Số người</label>
+                                    <input type="number" class="form-control" placeholder="Nhập số người" required="">
+                                </div>
+                                <div class="col-12">
+                                    <label for="">Ghi chú</label>
+                                    <textarea class="form-control" id="" rows="3" style="height: 170px;"
+                                        placeholder="Nội dung">Ghi chú của bạn</textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn button-submit-custom">Gửi</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNI_ZWPqvdS6r6gPVO50I4TlYkfkZdXh8"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+
+    <style>
+        #google-map {
+            width: 100%;
+            height: 475px;
+        }
+    </style>
+    <script>
+        var radiusInMeters = 200; // bán kính (radius) của vùng bạn muốn hiển thị trên bản đồ, tính theo mét
+        // Tính toán mức độ zoom tương ứng dựa trên bán kính
+        var zoom = Math.round(14 - Math.log(radiusInMeters / 500) / Math.LN2);
+
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('google-map'), {
+                center: {
+                    lat: 21.089780554646172,
+                    lng: 105.80449925067724
+                },
+                zoom: zoom
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initMap);
+        document.getElementById("modal-add-tour").click()
+    </script>
+
+</body>
+
+</html>
