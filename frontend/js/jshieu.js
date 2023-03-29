@@ -24,31 +24,6 @@ $(document).ready(function () {
   $(".button-write-comment").click(function () {
     $(".write-comment-content").slideToggle();
   });
-
-
-  // icon mắt ẩn
-
-
-
-  // $('.input-change-password .eyeopen-icon').hide();
-  // $('.input-change-password .eyeclose-icon').click(function(){
-  //   $('.input-change-password .eyeopen-icon').toggle();
-  //   $('.input-change-password .eyeclose-icon').toggle();
-  // });
-
-  // $('.input-change-password .eyeopen-icon').click(function(){
-  //   $('.input-change-password .eyeopen-icon').toggle();
-  //   $('.input-change-password .eyeclose-icon').toggle();
-  // });  
-
-  // $('.input-change-password #change-password').click(function(){
-  //   if(password.getAttribute('type') === 'password'){
-  //     password.setAttribute('type', 'text');
-  //   } else {
-  //     password.setAttribute('type', 'password');
-  //   }
-  // });
-
   $(".eye-icon").click(function (e) {
     let value = $(this).attr("value")
 
@@ -65,7 +40,6 @@ $(document).ready(function () {
     }
 
   });
-
 
 });
 
@@ -158,3 +132,45 @@ function handleArrowRight(e) {
 
 
 
+// button
+$(document).ready(function () {
+  $('#place-detail .button-content button').click(function(){
+    if($('#place-detail .button-like button ').css('background-color') == 'rgba(0, 0, 0, 0)'){
+      $('#place-detail .button-like button').css('background-color','#188181');
+      $('#place-detail .button-like button').css('color','#fff')
+      $('.button-like i').css('color','#fff');
+    }
+    else{
+      $('#place-detail .button-like button').css('background-color','transparent');
+      $('#place-detail .button-like button').css('color','#188181')
+      $('.button-like i').css('color','#188181');
+    }
+  });
+});
+
+// xem thêm 
+
+$(function(){
+  var limitW = 200;
+  var char = 4;
+  console.log($('.post-comment-content-text').html());
+  var txt = $('.post-comment-content-text').html();
+  var txtStart = txt.slice(0,limitW).replace(/\w+$/,'');
+  var txtEnd = txt.slice(txtStart.length);
+  if ( txtEnd.replace(/\s+$/,'').split(' ').length > char ) {
+      $('.post-comment-content-text').html([
+          txtStart,
+          '<a href="#" class="more">... xem thêm</a>',
+          '<span class="detail">',
+          txtEnd,
+          '</span>'
+      ].join('')
+    );
+  }
+  
+  $('span.detail').hide();
+  $('a.more').click(function() {
+      $(this).hide().next('span.detail').fadeIn();
+      return false;
+  });
+});
