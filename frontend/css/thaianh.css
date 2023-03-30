@@ -182,12 +182,12 @@ table {
 }
 
 #event-home .box-event-home .in-box-event-home .slick-prev {
-    right: 440px;
+    right: 50%;
     transition: .8s;
 }
 
 #event-home .box-event-home .in-box-event-home .slick-next {
-    right: 323px;
+    right: 42%;
     transition: .8s;
 }
 
@@ -517,6 +517,10 @@ table {
 
 /* #news-home */
 
+#news-home .nav-tabs .nav-link.active {
+    border: none;
+}
+
 #news-home .article-space {
 	border-bottom: 3px solid #3f4042;
 	width: 15.5%;
@@ -532,11 +536,12 @@ table {
     height: auto;
 }
 
-#news-home .all-news-home .box-news ul {
+#news-home .all-news-home .box-news ul li button {
     font-size: 16px;
     font-weight: 400;
     padding-left: 36px;
     text-transform: uppercase;
+    text-align: left;
 }
 
 #news-home .all-news-home .box-news ul li {
@@ -554,6 +559,12 @@ table {
 
 #news-home .all-news-home .box-news ul li:last-child {
     border: none;
+}
+
+
+#news-home .all-news-home ul li::marker {
+    color: rgba(18, 107, 102, 0.7);
+    font-size: 22px;
 }
 
 /* #tour-travel-home */
@@ -1268,7 +1279,6 @@ table {
     }
     #event-home .box-event-home .in-box-event-home .slick-arrow {
         font-size: 18px;
-        padding: 13px 20px;
     }
 }
 
@@ -1476,6 +1486,9 @@ table {
     #viet-nam-360 .slide-vn360 .slick-prev {
         display: none !important;
     }
+    #event-home .box-event-home .in-box-event-home .slick-arrow {
+        bottom: 10px;
+    }
 }
 
 @media (max-width:700px) {
@@ -1558,6 +1571,10 @@ table {
     .event-home-title p {
         padding-top: 100px;
     }
+    #event-home .box-event-home .in-box-event-home .slick-next {
+        right: 40%;
+        transition: .8s;
+    }
 }
 
 @media (max-width:450px) {
@@ -1581,6 +1598,10 @@ table {
 @media (max-width:400px) {
     #travel-guide .container {
         padding: 0 30px;
+    }
+    #event-home .box-event-home .in-box-event-home .slick-next {
+        right: 38%;
+        transition: .8s;
     }
 }
 
