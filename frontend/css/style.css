@@ -603,11 +603,20 @@ color: #188181;
 #place-post-comment .post-comment{
 	margin-bottom: 62px;
 }
-
-
+/* bổ sung pagination */
+#pagination-page ul li a {
+    padding: 10px 16px;
+    font-size: 20px;
+    color: #3F4042;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Korinna' !important;
+}
 /* pagination */
 #pagination-page{
-	margin-bottom:80px;
+	/* margin-bottom:80px; */
+	padding-bottom: 80px;
+	padding-top: 15px
 }
 
 #pagination-page .pagination{
@@ -662,7 +671,7 @@ color: #188181;
 }
 
 #order-table .group-order-table .input-group-text{
-	width: 30%;
+	width: 34%;
 	background-color: transparent;
 	font-size: 22px;
 	border: none;
@@ -1080,7 +1089,7 @@ color: #188181;
 	align-items: center;
 }
 
-#section-sign .input-sign-in-user, #section-sign .input-sign-in-password, #section-change-password .input-change-password{
+#section-sign .input-sign-in-user, #section-sign .input-sign-in-password,.input-change-password{
 	padding-left:25px;
 	border: 1px solid rgba(63, 64, 66, 0.5);
 	border-radius: 10px;
@@ -1089,6 +1098,18 @@ color: #188181;
 	margin-bottom: 46px;
 	
 }
+.tab-pane-sign .input-group{
+	margin-bottom: 20px !important;
+}
+
+.tab-pane-sign .input-group input{
+	border: none;
+}
+
+.tab-pane-sign .input-group input::placeholder{
+	font-size: 20px;
+}
+
 
 #section-sign #sign-in-name, #section-sign #sign-in-password, #section-change-password #change-password, #section-change-password #verify-change-password{
 	border: none;
@@ -1108,12 +1129,12 @@ color: #188181;
 	outline: none;
 }
 
-#section-sign .input-sign-in-user .user-label i, #section-sign .input-sign-in-password .password-label i,#section-change-password .input-change-password .change-password-label i {
+#section-sign .input-sign-in-user .user-label i, #section-sign .input-sign-in-password .password-label i,.input-change-password .change-password-label i {
 	color:#126B66;
 	font-size: 21px;
 }
 
-#section-sign .input-sign-in-user .user-label, #section-sign .input-sign-in-password .password-label, #section-change-password .input-change-password .change-password-label{
+#section-sign .input-sign-in-user .user-label, #section-sign .input-sign-in-password .password-label, .input-change-password .change-password-label{
 	margin: auto;
 }
 
@@ -1128,12 +1149,13 @@ color: #188181;
 	margin-bottom: 20px;
 }
 
-#section-sign .form-sign-in .forgot-password{
+#section-sign .forgot-password{
 	font-size: 18px;
 	margin-bottom: 80px;
+	text-align: ce;
 }
 
-#section-sign .form-sign-in .forgot-password a{
+#section-sign .forgot-password a{
 	color: #188181;
 }
 
@@ -1432,7 +1454,7 @@ color: #188181;
 	font-size: 28px;
 }
 
-#section-change-password .input-change-password .icon-eye-button img{
+.input-change-password .icon-eye-button img{
 	margin: auto;
 	width: 27px;
 	height: 14px;
@@ -1441,7 +1463,7 @@ color: #188181;
 }
 
 
-#section-change-password .input-change-password .icon-eye-button{
+.input-change-password .icon-eye-button{
 	padding-right: 20px;
 	margin: auto;
 }
@@ -1750,4 +1772,11 @@ color: #188181;
 
 	/* chi tiết địa điểm */
 
+}
+
+
+@media (min-width:768px){
+	#section-change-password, #section-sign, #section-verify-account{
+		padding: 70px 0;
+	}
 }

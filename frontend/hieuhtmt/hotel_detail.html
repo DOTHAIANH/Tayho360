@@ -397,10 +397,7 @@
                                                             1.084.100 đ
                                                         </div>
                                                         <div class="button">
-                                                            <a href="" class="btn button-submit-custom"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#modal-book-room">Đặt
-                                                                phòng</a>
+                                                            <a href="" class="btn button-submit-custom" data-bs-toggle="modal" data-bs-target="#modal-book-room">Đặt phòng</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -983,57 +980,62 @@
                 <div class="modal-body">
                     <h5 class="text-center modal-name">Đặt phòng</h5>
                     <form action="" class="form-custom-1 py-3">
-                        <div class="card-body p-lg-5">
+                        <div class="card-body p-lg-4">
                             <div class="row g-3">
-                                <div class="col-12">
-                                    <div class="d-flex form-group-flex">
-                                        <label for="">Họ và tên</label>
-                                        <input type="text" class="form-control" placeholder="Nhập họ và tên" required="">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex form-group-flex">
-                                        <label for="">SĐT</label>
-                                        <input type="text" class="form-control" placeholder="Nhập số điện thoại" required="">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex form-group-flex">
-                                        <label for="">Ghi chú</label>
-                                        <textarea class="form-control" id="" rows="3" style="height: 170px;"
-                                            placeholder="Nội dung"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex form-group-flex">
-                                        <label for="">Check in</label>
-                                        <div class="d-flex date-time-input justify-content-between">
-                                            <input type="time" class="time-input">
-                                            <input type="date" class="date-input">
+                                <form action="">   
+                                    <div class="col-12">
+                                        <div class="d-flex form-group-flex">
+                                            <label for="">Họ và tên</label>
+                                            <input type="text" class="form-control" placeholder="Nhập họ và tên" required="">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex form-group-flex">
-                                        <label for="">Check out</label>
-                                        <div class="d-flex date-time-input justify-content-between">
-                                            <input type="time" class="time-input">
-                                            <input type="date" class="date-input">
+                                    <div class="col-12">
+                                        <div class="d-flex form-group-flex">
+                                            <label for="">SĐT</label>
+                                            <input type="text" class="form-control" placeholder="Nhập số điện thoại" required="">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex form-group-flex">
-                                        <label for="">Số lượng</label>
-                                        <div class="d-flex range-number justify-content-between">
-                                            <button class="minus-btn"><img src="../assets/lou_icon/icon-minus.svg"
-                                                    alt=""></button>
-                                            <input class="form-control" type="number" value="1">
-                                            <button class="plus-btn"><img src="../assets/lou_icon/icon-plus.svg"
-                                                    alt=""></button>
+                                    <div class="col-12">
+                                        <div class="d-flex form-group-flex">
+                                            <label for="">Ghi chú</label>
+                                            <textarea class="form-control" id="" rows="3" style="height: 170px;"
+                                                placeholder="Nội dung"></textarea>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="col-12">
+                                        <div class="d-flex form-group-flex">
+                                            <label for="">Check in</label>
+                                            <div class="d-flex date-time-input justify-content-between">
+                                                <input type="time" class="time-input">
+                                                <input type="date" class="date-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex form-group-flex">
+                                            <label for="">Check out</label>
+                                            <div class="d-flex date-time-input justify-content-between">
+                                                <input type="time" class="time-input">
+                                                <input type="date" class="date-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex form-group-flex">
+                                            <label for="">Số lượng</label>
+                                            <div class="d-flex range-number justify-content-between">
+                                                <button class="minus-btn"><img src="../assets/lou_icon/icon-minus.svg"
+                                                        alt=""></button>
+                                                <input class="form-control" type="number" value="1">
+                                                <button class="plus-btn"><img src="../assets/lou_icon/icon-plus.svg"
+                                                        alt=""></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12" style="text-align:center; margin-top:32px;">
+                                        <button type="submit" class="button-submit-custom">Đặt phòng</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </form>
@@ -1055,6 +1057,7 @@
         <script src="/js/jquery.js"></script>
         <script src="../js/bootstrap.bundle.js"></script>
         <script src="../js/jshieu.js"></script>
+        <script src="../js/main.js"></script>
     </div>
 
 

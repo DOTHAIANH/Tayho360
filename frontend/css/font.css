@@ -127,3 +127,7 @@ html {
 	font-family: 'Korinna' !important;
     font-weight: 700;
 }
+
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands" !important;
+}

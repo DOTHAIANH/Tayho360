@@ -189,9 +189,46 @@
 
                             </div>
                             <!-- Đăng ký tab -->
-                            <div class="tab-pane-sign tab-pane fade" id="sign-up" role="tabpanel"
-                                aria-labelledby="sign-up-tab">
-
+                            <div class="tab-pane-sign tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="sign-up-tab">
+                                <form class="form-sign-in form-change" action="">
+                                    <div class="input-group input-sign-in-user">
+                                        <label for="sign-in-name" class="user-label"><i
+                                                class="fa-solid fa-user"></i></label>
+                                        <input type="text" class="form-control" id="sign-in-name"
+                                            placeholder="Tên đăng nhập" required>
+                                    </div>
+                                    <div class="input-group input-sign-in-password">
+                                        <label for="sign-in-email" class="password-label"><i
+                                                class="fa-solid fa-lock"></i></label>
+                                        <input type="email" class="form-control" id="sign-in-email"
+                                            placeholder="Nhập email" required>
+                                    </div>
+                                    <div class="input-group input-change-password">
+                                        <label for="change-password" class="change-password-label"><i
+                                                class="fa-solid fa-lock"></i></label>
+                                        <input type="password" class="form-control" id="change-password"
+                                            placeholder="Mật khẩu" required>
+                                        <div class="icon-eye-button">
+                                            <img class="eye-icon" value="close" src="../img/eyeclose.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="input-group input-change-password">
+                                        <label for="verify-change-password" class="change-password-label"><i
+                                                class="fa-solid fa-lock"></i></label>
+                                        <input type="password" class="form-control" id="verify-change-password"
+                                            placeholder="Nhập lại Mật khẩu" required>
+                                        <div class="icon-eye-button">
+                                            <img class="eye-icon" value="close" src="../img/eyeclose.png" alt="">
+                                        </div>
+                                    </div>
+                                    <button class="button-sign-in" type="submit">Đăng ký</button>
+                                </form>
+                                <div class="sign-in-other">
+                                    <p>Hoặc Đăng ký với</p>
+                                    <a class="sign-in-mobile" href=""><i class="fa-solid fa-mobile-screen"></i></a>
+                                    <a class="sign-in-google" href=""><i class="fa-brands fa-google"></i></a>
+                                    <a class="sign-in-facebook" href=""><i class="fa-brands fa-facebook"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>

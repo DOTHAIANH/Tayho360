@@ -8,6 +8,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* hieu bo sung code */
+.section-heading{
+  margin-bottom: 40px;
+}
 
 .bg-primary-cus {
   background-color: #126b66;
@@ -26,10 +30,11 @@
   border-radius: 10px;
   padding: 12px 24px;
   border: 1 solid transparent;
+  margin-top: 15px;
 }
 .button-outline-primary-custom:hover {
-  background-color: #188181;
-  color: white;
+  border:1px solid #188181;
+ 
 }
 
 .button-submit-custom {
@@ -38,9 +43,11 @@
   color: white;
   padding: 5px 70px;
   border: 2px solid transparent;
+  font-size: 22px;
 }
 .button-submit-custom:hover {
-  border: 2px solid #188181;
+  background-color:  #188181;
+  color: white !important;
 }
 
 .section-heading h3 {
@@ -263,6 +270,7 @@
   border-radius: 8px;
   color: #3f4042;
 }
+
 .form-custom-1 .capcha span {
   white-space: nowrap;
 }
@@ -437,6 +445,12 @@
   background: #ffffff;
   border: 1px solid rgba(63, 64, 66, 0.5);
   border-radius: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#modal-book-tour .form-custom-1 input::placeholder{
+  font-size:18px ;
 }
 
 #modal-book-room .modal-name {
@@ -465,14 +479,14 @@
   border: 1px solid rgba(63, 64, 66, 0.5);
   border-radius: 8px;
   padding: 5px;
-  width: 20%;
+  width: 35%;
 }
 #modal-book-room .form-group-flex .date-time-input .date-input {
   background: #ffffff;
   border: 1px solid rgba(63, 64, 66, 0.5);
   border-radius: 8px;
   padding: 5px;
-  width: 75%;
+  width: 60%;
 }
 #modal-book-room .form-group-flex .range-number input {
   width: 65%;
@@ -737,6 +751,11 @@ footer .bottom-footer span {
   height: 240px;
   object-fit: cover;
 }
+
+#user-page .bg-white{
+  border-bottom-right-radius:40px ;
+}
+
 #user-page .side-bar .background {
   border-radius: 0px 60px;
   padding: 90px 70px;
@@ -1014,6 +1033,10 @@ footer .bottom-footer span {
   font-weight: 400;
   font-size: 18px;
   color: #3f4042;
+}
+
+.tour-chi-tiet-map .tour-chi-tiet-body .button-group{
+  text-align: center;
 }
 
 @media screen and (max-width: 991.98px) {
