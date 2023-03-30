@@ -55,7 +55,7 @@
                         <input type="text" placeholder="Tìm kiếm">
                     </form>
                     <li class="nav-item dropdown user-login">
-                        <a class="nav-link dropdown-toggle align-items-center" href="#" role="button"
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
                             data-bs-toggle="dropdown">
                             <img src="../assets/lou_icon/user-icon.png" alt="">
                             <span class="username">Xin chào, Nguyễn Văn A</span>
@@ -669,12 +669,38 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <div class="box-image-news">
-                            <img src="../img/thaianhimg/imgnews.png" alt="">
+                        
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="newsHome_1" role="tabpanel" aria-labelledby="newsHometab_1">
+                                <div class="box-image-news">
+                                    <a href=""><img src="../img/thaianhimg/imgnews.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="newsHome_2" role="tabpanel" aria-labelledby="newsHometab_2">
+                                <div class="box-image-news">
+                                    <a href=""><img src="../img/thaianhimg/imgnews.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="newsHome_3" role="tabpanel" aria-labelledby="newsHometab_3">
+                                <div class="box-image-news">
+                                    <a href=""><img src="../img/thaianhimg/imgnews.png" alt=""></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="box-news">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="newsHometab_1" data-bs-toggle="tab" data-bs-target="#newsHome_1" type="button" role="tab" aria-controls="newsHome_1" aria-selected="true">Quận Tây Hồ tổ chức Lễ giao, nhận quân năm 2023. Quận Tây Hồ tổ chức Lễ giao, nhận quân năm 2023</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="newsHometab_2" data-bs-toggle="tab" data-bs-target="#newsHome_2" type="button" role="tab" aria-controls="newsHome_2" aria-selected="false">Quận Tây Hồ tổ chức Lễ giao, nhận quân năm 2023. Quận Tây Hồ tổ chức Lễ giao, nhận quân năm 2023</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="newsHometab_3" data-bs-toggle="tab" data-bs-target="#newsHome_3" type="button" role="tab" aria-controls="newsHome_3" aria-selected="false">Quận Tây Hồ tổ chức Lễ giao, nhận quân năm 2023. Quận Tây Hồ tổ chức Lễ giao, nhận quân năm 2023</button>
+                                </li>
+                              </ul>
                             <ul>
                                 <li><a href="">Quận Tây Hồ tổ chức Lễ giao, nhận quân năm 2023. Quận Tây Hồ tổ chức Lễ
                                         giao, nhận quân năm 2023</a></li>
