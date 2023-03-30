@@ -539,14 +539,14 @@ table {
 #news-home .all-news-home .box-news ul li button {
     font-size: 16px;
     font-weight: 400;
-    padding-left: 36px;
+    padding-left: 0;
     text-transform: uppercase;
     text-align: left;
 }
 
 #news-home .all-news-home .box-news ul li {
     border-bottom: 2px solid rgba(18, 107, 102, 0.7);
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 3px;
     list-style-type: disc;
 }
