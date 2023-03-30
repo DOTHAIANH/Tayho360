@@ -1,5 +1,5 @@
 * {
-	font-family: 'Korinna' !important;
+  font-family: "Korinna" !important;
   font-weight: 700;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .bg-primary-cus {
-  background-color: #126B66;
+  background-color: #126b66;
 }
 
 .button-outline-primary-custom {
@@ -223,14 +223,16 @@
     font-size: 25px;
   }
 }
-.su-kien-slider-chi-tiet .slick-prev, .su-kien-slider-chi-tiet .slick-next {
+.su-kien-slider-chi-tiet .slick-prev,
+.su-kien-slider-chi-tiet .slick-next {
   position: absolute;
   top: 50%;
   width: 70px;
   z-index: 100;
   transform: translate(0px, -50%);
 }
-.su-kien-slider-chi-tiet .slick-prev img, .su-kien-slider-chi-tiet .slick-next img {
+.su-kien-slider-chi-tiet .slick-prev img,
+.su-kien-slider-chi-tiet .slick-next img {
   width: 100%;
   position: absolute;
   top: 0;
@@ -247,10 +249,12 @@
 }
 
 @media screen and (max-width: 1199.98px) {
-  .su-kien-slider-chi-tiet .slick-prev, .su-kien-slider-chi-tiet .slick-next {
+  .su-kien-slider-chi-tiet .slick-prev,
+  .su-kien-slider-chi-tiet .slick-next {
     display: none !important;
   }
-  .su-kien-slider-chi-tiet .su-kien-slider-chi-tiet .slick-prev img, .su-kien-slider-chi-tiet .su-kien-slider-chi-tiet .slick-next img {
+  .su-kien-slider-chi-tiet .su-kien-slider-chi-tiet .slick-prev img,
+  .su-kien-slider-chi-tiet .su-kien-slider-chi-tiet .slick-next img {
     display: none;
   }
 }
@@ -580,7 +584,8 @@ footer .main-footer .list-info h5 {
   color: #013128;
   margin-bottom: 15px;
 }
-footer .main-footer .list-info ul li, footer .main-footer .list-info ul li a {
+footer .main-footer .list-info ul li,
+footer .main-footer .list-info ul li a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1089,6 +1094,12 @@ footer .bottom-footer span {
   padding: 5px 50px;
 }
 .danh-sach-phong .danh-sach-phong-item .border-right-line {
-  border-right: 1px solid #126B66;
-}/*# sourceMappingURL=main.css.map */
+  border-right: 1px solid #126b66;
+} /*# sourceMappingURL=main.css.map */
 
+.bg-pt {
+  background-image: url("../assets/lou_img/background-pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
