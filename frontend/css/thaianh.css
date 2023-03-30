@@ -1513,6 +1513,15 @@ table {
 }
 
 @media (max-width:500px) {
+    #tour-travel-home .box-slide-tth .slick-next {
+        right: 10px;
+    }
+    #tour-travel-home .pd-tth {
+        padding: 0 35px;
+    }
+    #tour-travel-home .container {
+        padding: 0 25px;
+    }
     .box-details-notification .box-img-bdn {
         width: 40px;
     }
@@ -1602,6 +1611,12 @@ table {
     #event-home .box-event-home .in-box-event-home .slick-next {
         right: 38%;
         transition: .8s;
+    }
+    #news-home .container {
+        padding: 0 30px;
+    }
+    #tour-travel-home .container {
+        padding: 0 30px;
     }
 }
 
