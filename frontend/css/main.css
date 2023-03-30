@@ -1091,3 +1091,11 @@ footer .bottom-footer span {
 .danh-sach-phong .danh-sach-phong-item .border-right-line {
   border-right: 1px solid #126B66;
 }/*# sourceMappingURL=main.css.map */
+
+.button-submit-custom {
+  background: #188181;
+  border-radius: 10
+  color: white;
+  padding: 5px 70px;
+  border: 2px solid transparent;
+}
