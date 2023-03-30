@@ -521,6 +521,15 @@ table {
     border: none;
 }
 
+#news-home .nav-tabs .nav-link {
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+#news-home .nav-tabs .nav-link:hover {
+    border: none !important;
+}
+
 #news-home .article-space {
 	border-bottom: 3px solid #3f4042;
 	width: 15.5%;
@@ -542,13 +551,13 @@ table {
     padding-left: 0;
     text-transform: uppercase;
     text-align: left;
+    color: #495057;
 }
 
 #news-home .all-news-home .box-news ul li {
     border-bottom: 2px solid rgba(18, 107, 102, 0.7);
     /* padding-top: 20px; */
     padding-bottom: 3px;
-    list-style-type: disc;
 }
 
 #news-home .all-news-home .box-news ul li a {
@@ -558,13 +567,21 @@ table {
 }
 
 #news-home .all-news-home .box-news ul li:last-child {
-    border: none;
+    border: none !important;
 }
 
 
 #news-home .all-news-home ul li::marker {
     color: rgba(18, 107, 102, 0.7);
     font-size: 22px;
+}
+
+#news-home .all-news-home .box-news ul li ul {
+    margin-left: 23px;
+}
+
+#news-home .all-news-home .box-news ul li .list-styled {
+    list-style-type: disc;
 }
 
 /* #tour-travel-home */
@@ -715,8 +732,9 @@ table {
 }
 
 .box-image-vn360 img {
-    width: 100%;
-    height: 300px;
+    width: 323px;
+    height: auto;
+    border-radius: 20px;
 }
 
 .flex {
@@ -724,10 +742,6 @@ table {
 }
 
 #viet-nam-360 .slide-vn360 .slick-center {
-    /* position: absolute;
-    top: 0;
-    z-index: 10;
-    right: 0; */
     transform: scale(1);
     translate: -135px -70px;
 }
@@ -738,8 +752,9 @@ table {
 }
 
 #viet-nam-360 .slide-vn360 .slick-center img {
-    width: 600px;
-    height: 450px;
+    width: 580px;
+    height: auto;
+    border-radius: 20px;
 }
 
 #viet-nam-360 .container {
@@ -761,7 +776,7 @@ table {
 
 #viet-nam-360 .slide-vn360 .slick-prev {
     right: 972px;
-    top: 230px;
+    top: 175px;
     transition: .8s;
     background-color: rgba(85, 143, 124, 0.9);
 }
@@ -769,7 +784,7 @@ table {
 #viet-nam-360 .slide-vn360 .slick-next {
     right: -5px;
     transition: .8s;
-    top: 230px;
+    top: 175px;
     background-color: rgba(85, 143, 124, 0.9);
 }
 
@@ -1206,7 +1221,7 @@ table {
 }
 
 #map-home #mapid {
-    height: 1100px !important;
+    height: 800px !important;
 }
 
 #map-home #mapid .book-icon-map .box-img-icon img {
@@ -1388,6 +1403,10 @@ table {
     #viet-nam-360 .slide-vn360 .slick-prev {
         right: 910px;
     } 
+    #map-home .check-box-map {
+        padding: 25px 30px 25px 35px;
+        width: 320px;
+    }
 }
 
 @media (max-width:900px) {
@@ -1400,6 +1419,24 @@ table {
     }    
     #viet-nam-360 .slide-vn360 .slick-center {
         translate: -135px -50px;
+    }
+    .box-image-vn360 img {
+        width: 285px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-next {
+        right: 5px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-prev {
+        right: 855px !important;
+        top: 160px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-next {
+        right: 3px;
+        top: 160px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-center img {
+        height: 255px;
+        object-fit: cover;
     }
 }
 
@@ -1474,8 +1511,9 @@ table {
         font-size: 14px;
     }
     #viet-nam-360 .slide-vn360 .slick-center img {
-        width: 525px;
-        height: 380px;
+        height: 220px;
+        object-fit: cover;
+        width: 500px;
     }
     #viet-nam-360 .slide-vn360 .slick-center {
         translate: -135px -42px;
@@ -1488,6 +1526,26 @@ table {
     }
     #event-home .box-event-home .in-box-event-home .slick-arrow {
         bottom: 10px;
+    }
+    .box-image-vn360 img {
+        width: 235px;
+    }
+    #map-home #mapid .book-icon-map .box-img-icon img {
+        width: 60%;
+        height: auto;
+    }
+    #map-home .check-box-map {
+        height: 424px;
+        width: 280px;
+    }
+    #map-home .check-box-map label p {
+        font-size: 20px !important;
+    }
+    #map-home .check-box-map label {
+        font-size: 14px;
+    }
+    #map-home #mapid .book-icon-map {
+        left: 66px;
     }
 }
 
@@ -1509,6 +1567,16 @@ table {
     }
     .box-event-home .slide-time-event {
         right: 8%;
+    }
+    #viet-nam-360 .slide-vn360 .slick-center img {
+        height: 180px;
+        width: 400px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-center {
+        translate: -100px -39px;
+    }
+    .box-image-vn360 img {
+        width: 190px;
     }
 }
 
@@ -1584,6 +1652,16 @@ table {
         right: 40%;
         transition: .8s;
     }
+    .box-image-vn360 img {
+        width: 155px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-center img {
+        height: 150px;
+        width: 355px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-center {
+        translate: -100px -35px;
+    }
 }
 
 @media (max-width:450px) {
@@ -1617,6 +1695,19 @@ table {
     }
     #tour-travel-home .container {
         padding: 0 30px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-center img {
+        height: 150px;
+        width: 361px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-center {
+        translate: -121px -35px;
+    }
+    #map-home .check-box-map {
+        left: 30px;
+    }
+    #map-home #mapid .book-icon-map {
+        left: 15px;
     }
 }
 
