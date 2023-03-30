@@ -1372,11 +1372,24 @@ table {
     #travel-guide .container {
         padding: 0 120px;
     }
+    #viet-nam-360 .slide-vn360 .slick-next {
+        right: 45px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-prev {
+        right: 910px;
+    } 
 }
 
 @media (max-width:900px) {
     .info-event-home {
         width: 570px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-center img {
+        width: 570px;
+        height: 400px;
+    }    
+    #viet-nam-360 .slide-vn360 .slick-center {
+        translate: -135px -50px;
     }
 }
 
@@ -1449,6 +1462,19 @@ table {
     }
     .vn360-description {
         font-size: 14px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-center img {
+        width: 525px;
+        height: 380px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-center {
+        translate: -135px -42px;
+    }
+    #viet-nam-360 .slide-vn360 .slick-next {
+        display: none !important;
+    }
+    #viet-nam-360 .slide-vn360 .slick-prev {
+        display: none !important;
     }
 }
 

@@ -22,10 +22,10 @@ $(document).ready(function () {
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 3,
-    infinite: false,
+    infinite: true,
     speed: 500,
     prevArrow: `<button type='button' class='slick-prev pull-left'><i class="fa-solid fa-caret-left"></i></button>`,
-    nextArrow: `<button type='button' class='slick-next pull-right'><i class="fa-solid fa-caret-right"></i></button>`
+    nextArrow: `<button type='button' class='slick-next pull-right'><i class="fa-solid fa-caret-right"></i></button>`,
   });
 
 });
@@ -87,10 +87,27 @@ $(document).ready(function () {
     infinite: true,
     centerMode: true,
     slidesToShow: 3,
-    infinite: false,
+    infinite: true,
     speed: 500,
     prevArrow: `<button type='button' class='slick-prev pull-left'><i class="fa-solid fa-angle-left"></i></button>`,
-    nextArrow: `<button type='button' class='slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`
+    nextArrow: `<button type='button' class='slick-next pull-right'><i class="fa-solid fa-angle-right"></i></button>`,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          autoplay: true,
+          autoplaySpeed: 2000
+        }
+      },
+
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 
 });
