@@ -1391,9 +1391,72 @@ color: #188181;
 	margin: auto;
 }
 
+/* section hotel */
+.danh-sach-phong .head-line h3 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28.8px;
+	text-transform: uppercase;
+	color: #3f4042;
+}
+
+.danh-sach-phong .danh-sach-phong-item .room-detail {
+	max-width: 450px;
+	margin: 0 auto;
+}
+
+.danh-sach-phong .danh-sach-phong-item .room-detail h6 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28.8px;
+	color: #3f4042;
+	margin-bottom: 25px;
+}
+
+.danh-sach-phong .danh-sach-phong-item .room-detail .roon-service span {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15.6px;
+	color: #126b66;
+}
+
+.danh-sach-phong .danh-sach-phong-item .room-price .badge-discount {
+	background-color: #126b66;
+}
+
+.danh-sach-phong .danh-sach-phong-item .room-price del {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22.4px;
+	color: #3f4042;
+	line-height: 34px;
+}
+
+.danh-sach-phong .danh-sach-phong-item .room-price .price {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28.8px;
+	color: #126b66;
+	line-height: 30px;
+}
+
+.danh-sach-phong .danh-sach-phong-item .room-price .button-submit-custom {
+	padding: 5px 50px;
+}
+
+.danh-sach-phong .danh-sach-phong-item .border-right-line {
+	border-right: 1px solid #126B66;
+}
+
+.danh-sach-phong .room-item{
+	padding:0;
+	box-shadow: 4px 4px 8px rgba(24, 129, 129, 0.25);
+	border-radius: 10px;
+	border: 2px solid rgba(18, 107, 102, 0.5);
+}
 
 
-/* responsive */
+
 
 
 
