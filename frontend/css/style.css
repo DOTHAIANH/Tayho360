@@ -652,6 +652,21 @@ color: #188181;
 	line-height: 41px;
 }
 
+/* nhà hàng đặt bàn */
+#order-table{
+	height: 638px;
+}
+
+#order-table .title-order-table p{
+	font-size:36px;
+	text-transform: uppercase;
+}
+
+#order-table .box-order-table form{
+	height: 488px;
+	background-color: red;
+}
+
 
 
 

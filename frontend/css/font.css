@@ -119,6 +119,10 @@
     font-family: "Font Awesome 6 Free" !important;
 }
 
+.fa {
+    font-family: var(--fa-style-family,"Font Awesome 6 Free") !important;
+}
+
 html {
 	font-family: 'Korinna' !important;
     font-weight: 700;
