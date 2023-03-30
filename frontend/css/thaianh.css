@@ -1133,10 +1133,10 @@ table {
     font-family: 'Korinna' !important;
 }
 
-#pagination-page ul li:hover {
+/* #pagination-page ul li:hover {
     border: 2px solid #188181;
     border-radius: 10px;
-}
+} */
 
 /* #map-home */
 
