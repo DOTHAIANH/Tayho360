@@ -95,7 +95,7 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          autoplay: true,
+          // autoplay: true,
           autoplaySpeed: 2000
         }
       },
@@ -103,7 +103,7 @@ $(document).ready(function () {
       {
         breakpoint: 500,
         settings: {
-          autoplay: true,
+          // autoplay: true,
           autoplaySpeed: 2000
         }
       },
