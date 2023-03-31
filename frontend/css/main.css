@@ -1117,3 +1117,9 @@ footer .bottom-footer span {
 .eye-password {
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
+
+/* hiếu bổ sung css */ 
+#user-page .col-lg-9.bg-white{
+  border-top-right-radius:40px; 
+  border-bottom-right-radius:40px; 
+}
