@@ -141,8 +141,8 @@
 
         <section id="section-sign">
             <div class="container-sign container">
-                <div class="row">
-                    <div class="col-6 box-sign">
+                <div class="row row-sign">
+                    <div class="col-7 box-sign">
                         <ul class="nav nav-tabs nav-sign" id="myTab" role="tablist">
                             <li class="nav-item nav-item-sign" role="presentation">
                                 <button class="nav-link-sign nav-link active" id="sign-in-tab" data-bs-toggle="tab"
@@ -166,13 +166,13 @@
                                         <label for="sign-in-name" class="user-label"><i
                                                 class="fa-solid fa-user"></i></label>
                                         <input type="text" class="form-control" id="sign-in-name"
-                                            placeholder="Tên đăng nhập">
+                                            placeholder="Tên đăng nhập" required>
                                     </div>
                                     <div class="input-group input-sign-in-password">
                                         <label for="sign-in-password" class="password-label"><i
                                                 class="fa-solid fa-lock"></i></label>
                                         <input type="text" class="form-control" id="sign-in-password"
-                                            placeholder="Mật khẩu">
+                                            placeholder="Mật khẩu" required>
                                     </div>
                                     <button class="button-sign-in" type="submit">Đăng nhập</button>
                                     <div class="forgot-password">
@@ -233,8 +233,12 @@
                         </div>
                     </div>
 
-                    <div class="col-6 sign-background-right">
-                        <img src="../img/background-right-sign.jpg" alt="">
+                    <div class="col-5 background-right-sign">
+                        <div class="background-right-sign-circle">
+                        </div>
+                        <div class="background-right-sign-scene">
+                            <img src="../img/tayhobackground.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>

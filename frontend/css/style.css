@@ -1063,6 +1063,8 @@ color: #188181;
 	padding-top: 76px;
 	padding-bottom: 60px;
 	padding-left:90px;
+	padding-right: 213px;
+   
 } 
 
 #section-sign .box-sign .nav-item-sign{
@@ -1105,6 +1107,10 @@ color: #188181;
 
 .tab-pane-sign .input-group input{
 	border: none;
+}
+
+.tab-pane-sign .input-group input:focus{
+	box-shadow: none;
 }
 
 .tab-pane-sign .input-group input::placeholder{
@@ -1320,7 +1326,7 @@ color: #188181;
     height: auto;
     border-radius: 50%;
     overflow: hidden;
-    width: 128%;
+    width: 221%;
 }
 
 #section-verify-account .background-right-sign .background-right-sign-scene img{
@@ -1341,13 +1347,13 @@ color: #188181;
 }
 
 #section-verify-account .background-right-sign-circle {
-	height: 1421px;
-	width: 1421px;
-	background-color: #8BBEB5;
-	border-radius: 50%;
-	position: absolute;
-	right: -150%;
-	top: -50%;
+	height: 1269px;
+    width: 1445px;
+    background-color: #8BBEB5;
+    border-radius: 50%;
+    position: absolute;
+    right: -150%;
+    top: -38%;
 }
 
 #section-verify-account .input-verify{
@@ -1571,6 +1577,51 @@ color: #188181;
 	margin-top: 80px;
 }
 
+/* background */
+
+.background-right-sign{
+	position: relative;
+	height: 100%;
+}
+
+.background-right-sign .background-right-sign-scene{
+	position: absolute;
+    top: -20%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 221%;
+}
+
+.background-right-sign .background-right-sign-scene img{
+	width: 800px;
+    height: 1000px;
+}
+
+
+.background-right-sign .background-right-sign-circle img{
+	width: 100%;
+}
+.row.row-sign{
+	height: 741px;
+}
+
+.row.row-sign {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 40px;
+}
+
+.background-right-sign-circle {
+	height: 1269px;
+    width: 1445px;
+    background-color: #8BBEB5;
+    border-radius: 50%;
+    position: absolute;
+    right: -150%;
+    top: -38%;
+}
 
 
 @media (max-width:1025px){
@@ -1581,9 +1632,6 @@ color: #188181;
 
 	}
 
-	/* #place-detail .place-img-slide {
-		padding-left: 177px;
-	} */
 
 	#place-detail .place-img-slide .slick-arrow{
 		width: 55px;
@@ -1624,6 +1672,16 @@ color: #188181;
 
 	#section-change-password .box-change-password {
 		padding-right: 148px;
+	}
+
+	/* background chung */
+	.background-right-sign-circle {
+		height: 1269px;
+		width: 1142px;
+	}
+
+	.background-right-sign .background-right-sign-scene {
+		width: 289%;
 	}
 }
 
@@ -1687,6 +1745,31 @@ color: #188181;
 	#section-change-password .box-change-password {
 		padding-right: 20px;
 		padding-left: 20px;
+	}
+	/* background chung */
+	.background-right-sign{
+		display: none;
+	}
+
+	.box-change-password{
+		width: 100%;
+	}
+
+	.box-change-password {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	/* đăng ký đăng nhập */
+	#section-sign .box-sign {
+		width: 100%;
+		padding-right: 40px;
+		padding-left: 40px;
+
+	}
+
+	#section-sign .nav-link-sign {
+		font-size:25px
 	}
 
 
@@ -1811,8 +1894,7 @@ color: #188181;
 }
 
 
-@media (min-width:768px){
-	#section-change-password, #section-sign, #section-verify-account{
-		padding: 70px 0;
-	}
+
+#section-change-password, #section-sign, #section-verify-account{
+	padding: 70px 0;
 }
