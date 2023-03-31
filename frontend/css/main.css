@@ -1,6 +1,5 @@
 * {
-  font-family: "Korinna" !important;
-  /* font-weight: 700; */
+  font-family: "Times New Roman", Times, serif;
 }
 
 * {
@@ -8,13 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* hieu bo sung code */
-.section-heading{
-  margin-bottom: 40px;
-}
 
 .bg-primary-cus {
-  background-color: #126b66;
+  background-color: #126B66;
 }
 
 .button-outline-primary-custom {
@@ -30,12 +25,10 @@
   border-radius: 10px;
   padding: 12px 24px;
   border: 1 solid transparent;
-  margin-top: 15px;
 }
 .button-outline-primary-custom:hover {
   background-color: #188181;
   color: white;
- 
 }
 
 .button-submit-custom {
@@ -44,11 +37,9 @@
   color: white;
   padding: 5px 70px;
   border: 2px solid transparent;
-  font-size: 22px;
 }
 .button-submit-custom:hover {
-  background-color:  #188181;
-  color: white !important;
+  border: 2px solid #188181;
 }
 
 .section-heading h3 {
@@ -149,7 +140,7 @@
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
-  /* font-family: "League Spartan", sans-serif; */
+  font-family: "League Spartan", sans-serif;
 }
 .tour-du-lich-card .card-body {
   background: #188181;
@@ -157,7 +148,7 @@
 }
 .tour-du-lich-card .card-body * {
   color: white;
-  /* font-family: "League Spartan"; */
+  font-family: "League Spartan";
 }
 .tour-du-lich-card .card-body h5 {
   font-style: normal;
@@ -231,16 +222,14 @@
     font-size: 25px;
   }
 }
-.su-kien-slider-chi-tiet .slick-prev,
-.su-kien-slider-chi-tiet .slick-next {
+.su-kien-slider-chi-tiet .slick-prev, .su-kien-slider-chi-tiet .slick-next {
   position: absolute;
   top: 50%;
   width: 70px;
   z-index: 100;
   transform: translate(0px, -50%);
 }
-.su-kien-slider-chi-tiet .slick-prev img,
-.su-kien-slider-chi-tiet .slick-next img {
+.su-kien-slider-chi-tiet .slick-prev img, .su-kien-slider-chi-tiet .slick-next img {
   width: 100%;
   position: absolute;
   top: 0;
@@ -257,12 +246,10 @@
 }
 
 @media screen and (max-width: 1199.98px) {
-  .su-kien-slider-chi-tiet .slick-prev,
-  .su-kien-slider-chi-tiet .slick-next {
+  .su-kien-slider-chi-tiet .slick-prev, .su-kien-slider-chi-tiet .slick-next {
     display: none !important;
   }
-  .su-kien-slider-chi-tiet .su-kien-slider-chi-tiet .slick-prev img,
-  .su-kien-slider-chi-tiet .su-kien-slider-chi-tiet .slick-next img {
+  .su-kien-slider-chi-tiet .su-kien-slider-chi-tiet .slick-prev img, .su-kien-slider-chi-tiet .su-kien-slider-chi-tiet .slick-next img {
     display: none;
   }
 }
@@ -271,7 +258,6 @@
   border-radius: 8px;
   color: #3f4042;
 }
-
 .form-custom-1 .capcha span {
   white-space: nowrap;
 }
@@ -446,12 +432,6 @@
   background: #ffffff;
   border: 1px solid rgba(63, 64, 66, 0.5);
   border-radius: 10px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-#modal-book-tour .form-custom-1 input::placeholder{
-  font-size:18px ;
 }
 
 #modal-book-room .modal-name {
@@ -480,14 +460,14 @@
   border: 1px solid rgba(63, 64, 66, 0.5);
   border-radius: 8px;
   padding: 5px;
-  width: 35%;
+  width: 20%;
 }
 #modal-book-room .form-group-flex .date-time-input .date-input {
   background: #ffffff;
   border: 1px solid rgba(63, 64, 66, 0.5);
   border-radius: 8px;
   padding: 5px;
-  width: 60%;
+  width: 75%;
 }
 #modal-book-room .form-group-flex .range-number input {
   width: 65%;
@@ -583,6 +563,14 @@ header .dropdown-menu .logout {
   border-top: 2px solid rgba(24, 129, 129, 0.53);
 }
 
+@media screen and (max-width: 1199.98px) {
+  header .dropdown-menu .dropdown-item {
+    background-color: white;
+  }
+  header .dropdown-menu {
+    box-shadow: none;
+  }
+}
 footer .main-footer {
   background: linear-gradient(174.23deg, #97c4bd 28.97%, #3b9281 96.37%);
 }
@@ -599,8 +587,7 @@ footer .main-footer .list-info h5 {
   color: #013128;
   margin-bottom: 15px;
 }
-footer .main-footer .list-info ul li,
-footer .main-footer .list-info ul li a {
+footer .main-footer .list-info ul li, footer .main-footer .list-info ul li a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -752,11 +739,6 @@ footer .bottom-footer span {
   height: 240px;
   object-fit: cover;
 }
-
-#user-page .bg-white{
-  border-bottom-right-radius:40px ;
-}
-
 #user-page .side-bar .background {
   border-radius: 0px 60px;
   padding: 90px 70px;
@@ -1036,10 +1018,6 @@ footer .bottom-footer span {
   color: #3f4042;
 }
 
-.tour-chi-tiet-map .tour-chi-tiet-body .button-group{
-  text-align: center;
-}
-
 @media screen and (max-width: 991.98px) {
   .time-line .main-menu .tab-timeline .img-detail {
     display: block;
@@ -1118,8 +1096,8 @@ footer .bottom-footer span {
   padding: 5px 50px;
 }
 .danh-sach-phong .danh-sach-phong-item .border-right-line {
-  border-right: 1px solid #126b66;
-} /*# sourceMappingURL=main.css.map */
+  border-right: 1px solid #126B66;
+}
 
 .bg-pt {
   background-image: url("../assets/lou_img/background-pattern.png");
@@ -1129,11 +1107,13 @@ footer .bottom-footer span {
 }
 
 .tour-chi-tiet-map .tour-chi-tiet-body .button-group .button-outline-primary-custom:hover {
-  color: white!important;
+  color: white !important;
 }
-#tour-chi-tiet-intro .intro-content{
+
+#tour-chi-tiet-intro .intro-content {
   font-size: 18px;
 }
-.eye-password{
+
+.eye-password {
   cursor: pointer;
-}
+}/*# sourceMappingURL=main.css.map */
