@@ -33,7 +33,8 @@
   margin-top: 15px;
 }
 .button-outline-primary-custom:hover {
-  border:1px solid #188181;
+  background-color: #188181;
+  color: white;
  
 }
 
