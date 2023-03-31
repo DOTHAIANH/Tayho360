@@ -717,6 +717,9 @@ table {
 }
 
 /* #viet-nam-360 */
+#viet-nam-360 {
+    height: 700px;
+}
 
 #viet-nam-360 .article-space {
 	border-bottom: 3px solid #3f4042;
@@ -735,6 +738,7 @@ table {
     width: 323px;
     height: auto;
     border-radius: 20px;
+    transition: all 700ms;
 }
 
 .flex {
@@ -1282,6 +1286,38 @@ table {
     opacity: 0!important;
 }
 
+@media (min-width:1800px) {
+    .info-event-home {
+        width: 1025px !important;
+    }
+}
+
+@media (min-width:2100px) {
+    .info-event-home {
+        width: 1175px !important;
+    }
+}
+
+@media (min-width:1700px) {
+    .box-event-home .slide-time-event {
+        right: 290px;
+    }
+}
+
+@media (min-width:1500px) {
+    .info-event-home {
+        width: 875px;
+    }
+}
+
+@media (min-width:1400px) {
+    #event-home .box-event-home .in-box-event-home .slick-prev {
+        right: 35%;
+    }
+    #event-home .box-event-home .in-box-event-home .slick-next {
+        right: 31%;
+    }
+}
 
 @media (max-width:1300px) {
     .lshowcase-boxInner {
@@ -1546,6 +1582,9 @@ table {
     }
     #map-home #mapid .book-icon-map {
         left: 66px;
+    }
+    #viet-nam-360 {
+        height: 500px;
     }
 }
 
