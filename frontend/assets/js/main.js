@@ -18,8 +18,8 @@ $(document).ready(function () {
         adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 1000,
-        prevArrow: "<button type='button' class='slick-prev'><img src='./assets/lou_icon/prev-btn.svg'/></button>",
-        nextArrow: "<button type='button' class='slick-next'><img src='./assets/lou_icon/next-btn.svg'/></button>",
+        prevArrow: "<button type='button' class='slick-prev'><img src='../assets/lou_icon/prev-btn.svg'/></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../assets/lou_icon/next-btn.svg'/></button>",
     });
     $(".edit-photo").click(function (e) {
         $(".file-edit-img")[0].click()

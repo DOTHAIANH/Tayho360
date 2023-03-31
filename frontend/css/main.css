@@ -1103,3 +1103,10 @@ footer .bottom-footer span {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.tour-chi-tiet-map .tour-chi-tiet-body .button-group .button-outline-primary-custom:hover {
+  color: white!important;
+}
+#tour-chi-tiet-intro .intro-content{
+  font-size: 18px;
+}
