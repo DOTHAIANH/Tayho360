@@ -1124,6 +1124,10 @@ color: #188181;
 
 }
 
+.input-sign-in-password .form-control{
+	font-size: 20px;
+}
+
 #section-sign #sign-in-name:focus, #section-sign #sign-in-password:focus,#section-change-password #change-password:focus, #section-change-password #verify-change-password:focus{
 	box-shadow: none;
 }
