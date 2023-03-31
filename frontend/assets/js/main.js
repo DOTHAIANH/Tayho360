@@ -53,4 +53,17 @@ $(document).ready(function () {
         }
     });
 
+
+    $(".eye-password").click(function () {
+        var input = $(this).prev("input");
+        if (input.attr("type") === "password") {
+            input.attr("type", "text");
+            $(this).attr("value", "show");
+            $(this).attr("src","../assets/lou_icon/icon-eye-open.svg")
+        } else {
+            input.attr("type", "password");
+            $(this).attr("value", "hiden");
+            $(this).attr("src","../assets/lou_icon/icon-eye.svg")
+        }
+    });
 });
