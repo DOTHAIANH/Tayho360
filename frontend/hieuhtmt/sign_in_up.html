@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/thaianh.css">
-    <!-- <link rel="stylesheet" href="../css/font.css"> -->
+    <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/particle.css">
     <link rel="stylesheet" href="../css/style.css">
     <!-- fontawesome -->
@@ -141,8 +141,8 @@
 
         <section id="section-sign">
             <div class="container-sign container">
-                <div class="row">
-                    <div class="col-6 box-sign">
+                <div class="row row-sign">
+                    <div class="col-7 box-sign">
                         <ul class="nav nav-tabs nav-sign" id="myTab" role="tablist">
                             <li class="nav-item nav-item-sign" role="presentation">
                                 <button class="nav-link-sign nav-link active" id="sign-in-tab" data-bs-toggle="tab"
@@ -166,13 +166,13 @@
                                         <label for="sign-in-name" class="user-label"><i
                                                 class="fa-solid fa-user"></i></label>
                                         <input type="text" class="form-control" id="sign-in-name"
-                                            placeholder="Tên đăng nhập">
+                                            placeholder="Tên đăng nhập" required>
                                     </div>
                                     <div class="input-group input-sign-in-password">
                                         <label for="sign-in-password" class="password-label"><i
                                                 class="fa-solid fa-lock"></i></label>
                                         <input type="text" class="form-control" id="sign-in-password"
-                                            placeholder="Mật khẩu">
+                                            placeholder="Mật khẩu" required>
                                     </div>
                                     <button class="button-sign-in" type="submit">Đăng nhập</button>
                                     <div class="forgot-password">
@@ -189,15 +189,56 @@
 
                             </div>
                             <!-- Đăng ký tab -->
-                            <div class="tab-pane-sign tab-pane fade" id="sign-up" role="tabpanel"
-                                aria-labelledby="sign-up-tab">
-
+                            <div class="tab-pane-sign tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="sign-up-tab">
+                                <form class="form-sign-in form-change" action="">
+                                    <div class="input-group input-sign-in-user">
+                                        <label for="sign-in-name" class="user-label"><i
+                                                class="fa-solid fa-user"></i></label>
+                                        <input type="text" class="form-control" id="sign-in-name"
+                                            placeholder="Tên đăng nhập" required>
+                                    </div>
+                                    <div class="input-group input-sign-in-password">
+                                        <label for="sign-in-email" class="password-label"><i
+                                                class="fa-solid fa-lock"></i></label>
+                                        <input type="email" class="form-control" id="sign-in-email"
+                                            placeholder="Nhập email" required>
+                                    </div>
+                                    <div class="input-group input-change-password">
+                                        <label for="change-password" class="change-password-label"><i
+                                                class="fa-solid fa-lock"></i></label>
+                                        <input type="password" class="form-control" id="change-password"
+                                            placeholder="Mật khẩu" required>
+                                        <div class="icon-eye-button">
+                                            <img class="eye-icon" value="close" src="../img/eyeclose.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="input-group input-change-password">
+                                        <label for="verify-change-password" class="change-password-label"><i
+                                                class="fa-solid fa-lock"></i></label>
+                                        <input type="password" class="form-control" id="verify-change-password"
+                                            placeholder="Nhập lại Mật khẩu" required>
+                                        <div class="icon-eye-button">
+                                            <img class="eye-icon" value="close" src="../img/eyeclose.png" alt="">
+                                        </div>
+                                    </div>
+                                    <button class="button-sign-in" type="submit">Đăng ký</button>
+                                </form>
+                                <div class="sign-in-other">
+                                    <p>Hoặc Đăng ký với</p>
+                                    <a class="sign-in-mobile" href=""><i class="fa-solid fa-mobile-screen"></i></a>
+                                    <a class="sign-in-google" href=""><i class="fa-brands fa-google"></i></a>
+                                    <a class="sign-in-facebook" href=""><i class="fa-brands fa-facebook"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-6 sign-background-right">
-                        <img src="../img/background-right-sign.jpg" alt="">
+                    <div class="col-5 background-right-sign">
+                        <div class="background-right-sign-circle">
+                        </div>
+                        <div class="background-right-sign-scene">
+                            <img src="../img/tayhobackground.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -276,6 +317,7 @@
         <script src="../js/slick.js"></script>
         <script src="/js/jquery.js"></script>
         <script src="../js/bootstrap.bundle.js"></script>
+        <script src="../js/jshieu.js"></script>
     </div>
 </body>
 

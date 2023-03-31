@@ -1,6 +1,3 @@
-// console.log('a');
-
-// const $ = jQuery ;
 
 $(document).ready(function () {
 
@@ -103,8 +100,8 @@ $(document).ready(function () {
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000
         }
       },
     ]
@@ -113,44 +110,24 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  // var boxWidth = $("check-box-map").width();
-
-  // $(".show_pop-up").hide();
 
   $(".check-box-map").show();
-  // $(".hide_pop-up").show();
 
   $('.hide_pop-up').click(function () {
-    // $(".check-box-map").toggle("slide");
-    // $(".check-box-map").animate({
-    //   width: 0
-    // })
+
     $(".check-box-map").addClass("width-no");
     $(".check-box-map form").addClass("hide");
 
-    // $(".check-box-map form label").hide();
-
     $(".show_pop-up").removeClass("opacity-0");
-    // $(".hide_pop-up").hide();
-
 
     $(".btn-hide").addClass("to-left")
   });
 
   $(".show_pop-up").click(function () {
-    // $(".check-box-map").toggle("slide");
-    // $(".check-box-map").animate({
-    //   width: 400
-    // })
 
     $(".check-box-map").removeClass("width-no")
 
     $(".check-box-map form").removeClass("hide");
-
-    // $(".check-box-map form label").show();
-
-    // $(".hide_pop-up").show();
-    // $(".show_pop-up").hide();
 
     $(".btn-show").removeClass("hide-pop-up")
     $(".btn-hide").removeClass("to-left")

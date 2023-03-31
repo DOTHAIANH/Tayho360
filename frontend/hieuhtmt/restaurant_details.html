@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>demo</title>
+    <title>Chi tiết nhà hàng</title>
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/thaianh.css">
-    <!-- <link rel="stylesheet" href="../css/font.css"> -->
+    <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/particle.css">
     <link rel="stylesheet" href="../css/style.css">
     <!-- fontawesome -->
@@ -209,34 +209,41 @@
 
         <!-- Đặt bàn -->
         <section id="order-table" style="background-image:url(../img/background_Res.png)">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
+            <div class="container-order-table container">
+                <div class="row-order-table row">
+                    <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12">
 
                     </div>
-                    <div class="col-6 box-order-table">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-order-table">
                         <div class="title-order-table">
                             <p>Đặt bàn</p>
                         </div>
                         <form action="">
                             <div class="input-group group-order-table">
-                                <span class="input-group-text" id="basic-addon1"></span>
-                                <input type="text" class="form-control" placeholder="Username" required>
+                                <label class="input-group-text">Tên</label>
+                                <input type="text" class="form-control" placeholder="Nhập họ và tên" required>
                             </div>
 
                             <div class="input-group group-order-table">
-                                <span class="input-group-text" id="basic-addon1"></span>
+                                <label class="input-group-text">Điện thoại</label>
                                 <input type="tel" class="form-control" placeholder="Nhập số điện thoại"
                                     pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
                             </div>
 
                             <div class="input-group group-order-table">
-                                <span class="input-group-text" id="basic-addon1"></span>
-                                <input type="number" class="form-control" placeholder="Username" required>
+                                <label class="input-group-text">Số người</label>
+                                <input type="number" class="form-control" required>
                             </div>
 
+                            <div class="input-group group-order-table">
+                                <label class="input-group-text">Nhận phòng</label>
+                                <input type="date" class="form-control" required>
+                            </div>
 
-
+                            <div class="input-group group-order-table">
+                                <label class="input-group-text">Nhận phòng</label>
+                                <input type="date" class="form-control" required>
+                            </div>
                             <button type="submit">Đặt bàn ngay</button>
 
                         </form>
@@ -669,6 +676,7 @@
         <script src="../js/slick.js"></script>
         <script src="/js/jquery.js"></script>
         <script src="../js/bootstrap.bundle.js"></script>
+        <script src="../js/jshieu.js"></script>
     </div>
 </body>
 </html>
