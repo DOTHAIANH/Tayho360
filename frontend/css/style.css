@@ -1974,3 +1974,56 @@ color: #188181;
 .introduc-col{
 	padding-left: 74px;
 }
+
+/* artifact địa điểm chi tiết*/
+#artifacts-section .place-artifacts-img img{
+	width: 100%;
+	
+	border-radius: 20px;
+	transition: 0.5s;
+}
+
+#artifacts-section .place-artifacts-img{
+	border-radius: 20px;
+	overflow: hidden;
+	margin: 0 5px;
+}
+
+#artifacts-section .place-artifacts-title{
+	margin-top: 12px;
+}
+
+#artifacts-section .place-artifacts-title a{
+	font-size: 24px;
+	color: #3F4042;
+}
+
+
+#artifacts-section .place-artifacts-img:hover img{
+	scale: 1.2;
+	transition: 0.5s;
+}
+
+
+.place-artifacts-slide .slick-arrow{
+	position: absolute;
+    /* bottom: -800px; */
+    z-index: 10;
+    font-size: 30px;
+    background: #558F7C;
+    border: none;
+    border-radius: 50%;
+    width: 59px;
+    height: 59px;
+	top: 43%
+}
+
+.place-artifacts-slide .slick-arrow:hover{
+	background: #558F7C;
+}
+
+.place-artifacts-slide .slick-arrow i {
+	color: #fff;
+}
+
+
